@@ -1,0 +1,12 @@
+{
+  "version": "1.3.0",
+  "build": 6,
+  "url": "https://shubh74.github.io/expense-manager/",
+  "notes": [
+    "Split bills with groups and collect by UPI QR",
+    "Reports & ITR: financial-year ledger with CSV export",
+    "Credit card limits and reminders no longer counted as payments",
+    "Bank badges, Jio Payments Bank and more SMS formats",
+    "Update alerts inside the app"
+  ]
+}
