@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expense Manager — Download</title>
+<meta name="description" content="Track cash, UPI and bank spending in one calm ledger. Bank SMS do the typing. Free Android app by Aadhya Ventures.">
+<meta property="og:title" content="Expense Manager — free Android app">
+<meta property="og:description" content="Cash, UPI and bank — one calm ledger. Payments record themselves from bank SMS.">
+<meta property="og:image" content="icon.png">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F2EA; --surface:#FFFDF8; --sunk:#ECE8DE; --ink:#1D1C18; --soft:#57534A; --muted:#6E695E;
+    --hair:#E3DED2; --accent:#1E6B47; --accent-soft:#DCEADF; --warn:#A8432B; --warn-soft:#F4E2DA;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#11110F; --surface:#1A1A17; --sunk:#24231F; --ink:#EEEBE3; --soft:#B2AD9F; --muted:#8E897D;
+      --hair:#2E2D28; --accent:#6CC497; --accent-soft:#1B3326; --warn:#E8907A; --warn-soft:#3A221B; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 Figtree,system-ui,sans-serif}
+  ::selection{background:color-mix(in srgb,var(--accent) 28%,transparent)}
+  a{color:inherit;text-underline-offset:3px;text-decoration-color:var(--hair)}
+  .wrap{max-width:620px;margin:0 auto;padding:40px 20px 64px}
+  .mark{width:64px;height:64px;border-radius:19px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+  h1{font:500 clamp(2.3rem,7vw,3.3rem)/1.05 Newsreader,serif;letter-spacing:-.03em;margin:28px 0 12px;text-wrap:balance}
+  h2{font:500 1.55rem/1.2 Newsreader,serif;letter-spacing:-.01em;margin:0 0 14px}
+  .lede{color:var(--soft);font-size:1.08rem;margin:0 0 28px;max-width:52ch}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:16px;
+    background:var(--ink);color:var(--paper);font-weight:600;font-size:1.02rem;text-decoration:none;transition:transform .12s ease}
+  .btn:active{transform:scale(.98)}
+  .btn.quiet{background:var(--surface);color:var(--ink);border:1.2px solid var(--hair)}
+  .row{display:grid;gap:10px}
+  .meta{color:var(--muted);font-size:.86rem;margin:10px 2px 0}
+  .card{background:var(--surface);border:1px solid var(--hair);border-radius:20px;padding:22px;margin-top:36px}
+  ol{margin:0;padding:0;list-style:none;counter-reset:s}
+  ol li{counter-increment:s;position:relative;padding:0 0 16px 40px}
+  ol li:last-child{padding-bottom:0}
+  ol li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;
+    background:var(--ink);color:var(--paper);font:700 .8rem/26px Figtree;text-align:center}
+  ol li b{font-weight:600}
+  ol li span{display:block;color:var(--soft);font-size:.94rem}
+  .note{display:flex;gap:12px;background:var(--warn-soft);border-radius:14px;padding:14px 16px;margin:0 0 18px;font-size:.94rem}
+  .note.ok{background:var(--accent-soft)}
+  .feat{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+  .feat li{display:flex;gap:12px}
+  .dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:9px}
+  footer{margin-top:48px;text-align:center;color:var(--muted);font-size:.86rem}
+  footer b{color:var(--ink)}
+  @media (prefers-reduced-motion:no-preference){
+    .rise{animation:rise .7s cubic-bezier(.05,.7,.1,1) both}
+    .d1{animation-delay:.06s}.d2{animation-delay:.12s}.d3{animation-delay:.18s}
+    @keyframes rise{from{opacity:0;transform:translateY(12px);filter:blur(4px)}}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <img class="mark rise" src="icon.png" alt="Expense Manager logo" width="64" height="64">
+  <h1 class="rise d1">Your money,<br>written down clearly.</h1>
+  <p class="lede rise d2">Cash, UPI and bank spending in one calm ledger. Bank and UPI SMS record themselves — even when the app is closed. Free, private, made in India.</p>
+
+  <div class="row rise d3">
+    <a class="btn" href="https://github.com/shubh74/expense-manager/releases/latest/download/ExpenseManager.apk">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+      Download for Android
+    </a>
+    <a class="btn quiet" href="https://github.com/shubh74/expense-manager/releases/latest/download/ExpenseManager-small-arm64.apk">Smaller download (most phones from 2017+)</a>
+  </div>
+  <p class="meta">Version 1.1.0 · Android 7 or newer · ~57 MB (small version ~23 MB)</p>
+
+  <section class="card">
+    <h2>Install in a minute</h2>
+    <ol>
+      <li><b>Open the downloaded file</b><span>Tap the download notification, or find <i>ExpenseManager.apk</i> in Files → Downloads.</span></li>
+      <li><b>Allow installs from your browser</b><span>If asked, tap Settings → turn on “Allow from this source”, then go back.</span></li>
+      <li><b>If Play Protect warns you</b><span>Tap “More details” → “Install anyway”. This happens for any app not from the Play Store.</span></li>
+      <li><b>Open the app and sign in</b><span>Tick the consent box, then use Google or email.</span></li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Turn on automatic tracking</h2>
+    <p class="note"><span>⚠️</span><span>Android blocks SMS access for apps installed outside the Play Store until you allow it once. It takes 20 seconds.</span></p>
+    <ol>
+      <li><b>Long-press the Expense Manager icon → App info</b><span>Or: Settings → Apps → Expense Manager.</span></li>
+      <li><b>Tap ⋮ (top-right) → “Allow restricted settings”</b><span>Confirm with your PIN or fingerprint.</span></li>
+      <li><b>Permissions → SMS → Allow</b><span>Also allow Notifications to get a note for each payment.</span></li>
+      <li><b>Open the app — done</b><span>Past alerts from this month come in, and every new one is recorded on its own.</span></li>
+    </ol>
+    <p class="note ok" style="margin:18px 0 0"><span>💡</span><span>Don’t want to give SMS access? In Messages, long-press any bank SMS → Share → <b>Expense Manager</b>. It’s recorded instantly.</span></p>
+  </section>
+
+  <section class="card">
+    <h2>What you get</h2>
+    <ul class="feat">
+      <li><span class="dot"></span><span>Every bank, UPI and card payment recorded automatically, with each account kept separate</span></li>
+      <li><span class="dot"></span><span>Cash in hand that updates with every cash spend and ATM withdrawal</span></li>
+      <li><span class="dot"></span><span>Day-by-day spending, categories (including Blinkit, Zepto and local shops) and insights</span></li>
+      <li><span class="dot"></span><span>SMS read only on your phone — never uploaded. DPDP Act compliant, delete your account anytime</span></li>
+      <li><span class="dot"></span><span>Light and dark themes</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    Developed &amp; made by <b>Aadhya Ventures</b> · Made in India<br>
+    Questions? <a href="mailto:support@emfinance.app">support@emfinance.app</a>
+  </footer>
+</main>
+</body>
+</html>
