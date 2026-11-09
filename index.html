@@ -46,6 +46,10 @@
   ol li span{display:block;color:var(--soft);font-size:.94rem}
   .note{display:flex;gap:12px;background:var(--warn-soft);border-radius:14px;padding:14px 16px;margin:0 0 18px;font-size:.94rem}
   .note.ok{background:var(--accent-soft)}
+  .inapp{display:grid;gap:10px;background:var(--warn-soft);border-radius:16px;padding:16px;margin:0 0 18px}
+  .inapp[hidden]{display:none}
+  .inapp span{color:var(--soft);font-size:.94rem}
+  #stuck.flash{outline:2px solid var(--accent);outline-offset:3px;transition:outline-color .6s}
   .feat{display:grid;gap:14px;margin:0;padding:0;list-style:none}
   .feat li{display:flex;gap:12px}
   .dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:9px}
@@ -64,14 +68,30 @@
   <h1 class="rise d1">Your money,<br>written down clearly.</h1>
   <p class="lede rise d2">Cash, UPI and bank spending in one calm ledger. Bank and UPI SMS record themselves — even when the app is closed. Free, private, made in India.</p>
 
-  <div class="row rise d3">
-    <a class="btn" href="https://github.com/shubh74/expense-manager/releases/latest/download/ExpenseManager.apk">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
-      Download for Android
-    </a>
-    <a class="btn quiet" href="https://github.com/shubh74/expense-manager/releases/latest/download/ExpenseManager-small-arm64.apk">Smaller download (most phones from 2017+)</a>
+  <div class="inapp" id="inapp" hidden>
+    <b>Open this page in Chrome first.</b>
+    <span>Downloads from WhatsApp / Instagram's built-in browser often get stuck at 100%.</span>
+    <a class="btn" id="openChrome" href="#">Open in Chrome</a>
   </div>
-  <p class="meta">Version 1.1.0 · Android 7 or newer · ~57 MB (small version ~23 MB)</p>
+
+  <div class="row rise d3">
+    <a class="btn" id="dl" href="ExpenseManager-small.apk" download="ExpenseManager.apk" type="application/vnd.android.package-archive">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+      Download for Android · 22 MB
+    </a>
+    <a class="btn quiet" id="dlFull" href="ExpenseManager.apk" download="ExpenseManager-full.apk" type="application/vnd.android.package-archive">Full version for every phone · 57 MB</a>
+  </div>
+  <p class="meta">Version 1.1.0 · Android 7 or newer · If the small one won't install, use the full version.</p>
+
+  <section class="card" id="stuck">
+    <h2>Download stuck at 100%?</h2>
+    <p class="note"><span>⏳</span><span>Chrome checks every app file before finishing, and waits for you to confirm. That's the pause at 100%.</span></p>
+    <ol>
+      <li><b>Look for “Download anyway”</b><span>Chrome shows “File might be harmful” at the bottom of the screen — tap <b>Download anyway</b>.</span></li>
+      <li><b>Don't see it? Open Chrome's downloads</b><span>Chrome ⋮ (top-right) → <b>Downloads</b> → tap the file → <b>Download anyway</b> / <b>Keep</b>.</span></li>
+      <li><b>Still stuck?</b><span>Delete it from Downloads, switch to Wi-Fi, and download again in Chrome (not inside WhatsApp).</span></li>
+    </ol>
+  </section>
 
   <section class="card">
     <h2>Install in a minute</h2>
@@ -111,5 +131,29 @@
     Questions? <a href="mailto:support@emfinance.app">support@emfinance.app</a>
   </footer>
 </main>
+<script>
+  // In-app browsers (WhatsApp, Instagram, Facebook…) often stall on big downloads.
+  (function () {
+    var ua = navigator.userAgent || '';
+    var inApp = /WhatsApp|Instagram|FBAN|FBAV|FB_IAB|Line\/|Snapchat|; wv\)/i.test(ua);
+    var isAndroid = /Android/i.test(ua);
+    if (inApp && isAndroid) {
+      var url = location.href.replace(/^https?:\/\//, '');
+      document.getElementById('openChrome').href =
+        'intent://' + url + '#Intent;scheme=https;package=com.android.chrome;end';
+      document.getElementById('inapp').hidden = false;
+    }
+    // After tapping download, point people at the "stuck at 100%" help.
+    ['dl', 'dlFull'].forEach(function (id) {
+      document.getElementById(id).addEventListener('click', function () {
+        setTimeout(function () {
+          var s = document.getElementById('stuck');
+          s.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          s.classList.add('flash');
+        }, 1200);
+      });
+    });
+  })();
+</script>
 </body>
 </html>
