@@ -44,7 +44,13 @@
   .toc li{margin:4px 0;break-inside:avoid}
   .toc a{color:var(--soft);text-decoration:none} .toc a:hover{color:var(--accent)}
   a{color:var(--accent);text-underline-offset:3px}
-  footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--hair);color:var(--muted);font-size:.86rem;text-align:center}
+  .ft{margin-top:64px;background:#0B0B0C;color:#A9A498;padding:44px 0 26px;font-size:.9rem}
+  .ft .in{max-width:760px;margin:0 auto;padding:0 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 32px}
+  .ft img{display:block;height:28px;width:auto}
+  .ft p{margin:12px 0 0;color:#A9A498}
+  .ft nav{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
+  .ft a{color:#CFCABE;text-decoration:none} .ft a:hover{color:#F3F0E8}
+  .ft .bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
 </style>
 </head>
 <body>
@@ -170,8 +176,18 @@
   <h2 id="19-contact-and-grievances">19. Contact and grievances</h2>
   <p>Grievance Officer, Aadhya Ventures · Email: the support email shown in Settings → Help &amp; feedback · Based in Mumbai, Maharashtra</p>
   <p>We acknowledge complaints within 48 hours and aim to resolve them within 30 days, and in any case within the time required by law.</p>
-  <footer>Developed &amp; made by <b>Aadhya Ventures</b> · Made in India<br>
-  <a href="about.html">About</a> · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a></footer>
 </main>
+<footer class="ft">
+  <div class="in">
+    <div>
+      <img src="logo-h-white.png" alt="Paisook" height="28">
+      <p>Your family's money book — private, free, made in India.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="./#faq">FAQ</a>
+    </nav>
+  </div>
+  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made in Mumbai, India 🇮🇳</span></div>
+</footer>
 </body>
 </html>

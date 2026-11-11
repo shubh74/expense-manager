@@ -435,6 +435,66 @@
   .magnet{transition:transform .35s var(--ease)}
   [data-speed]{will-change:transform}
   @media (prefers-reduced-motion: reduce){.stack{transform:none;border-radius:0}h2 .hw > span{transform:none}}
+
+  /* ── Clean pass: boxes match their section ── */
+  /* Features hero tile: light, with a soft green wash */
+  .tile.hero-tile{background:linear-gradient(160deg,var(--surface),color-mix(in srgb,var(--accent-soft) 55%,var(--surface)))}
+  .tile.hero-tile h3{font:500 clamp(1.6rem,3vw,2.2rem)/1.1 Newsreader,serif;letter-spacing:-.02em}
+  .tile.hero-tile .ico{background:var(--accent);color:#fff}
+  .tile.hero-tile .sources span{background:var(--surface);border-color:var(--hair);color:var(--ink)}
+  .tile.hero-tile .merge .m{background:var(--surface);border-color:var(--hair);color:var(--soft)}
+  .tile.hero-tile .merge .m.one{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);color:var(--accent)}
+  .tile{border-color:color-mix(in srgb,var(--hair) 70%,transparent);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+
+  /* Paid-for-a-friend card: no black strip */
+  .bill .back{background:var(--accent-soft);color:var(--ink)}
+  .bill .back i{background:var(--accent);color:#fff}
+  .bill .back em{color:var(--accent)}
+
+  /* Play Store: light card on a light section */
+  .play{background:linear-gradient(140deg,var(--surface),color-mix(in srgb,var(--accent-soft) 60%,var(--surface)));color:var(--ink);border:1px solid var(--hair)}
+  .play::before{background:radial-gradient(closest-side,rgba(30,107,71,.14),transparent 70%)}
+  .play h2{color:var(--ink)}
+  .play p{color:var(--soft)}
+  .play .kicker{color:var(--accent) !important}
+  .play .badge{background:var(--accent-soft);color:var(--accent)}
+  .play .icon{box-shadow:0 30px 60px -28px rgba(0,0,0,.45)}
+  .play .soon{color:#F3F0E8}
+  .play .soon small{color:#B9B4A8}
+
+  /* Dark sections: open columns instead of boxes */
+  .how.dark .fstep{background:none;border:0;padding:0 8px}
+  .how.dark .fstep.lit{border:0}
+  .how.dark .flow{gap:28px}
+  .how.dark .fstep code{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.06)}
+  .promise{background:none;border:0;border-top:1px solid rgba(255,255,255,.12);border-radius:0;padding:24px 4px 0}
+  .promise:hover{border-color:var(--gold)}
+  .promises{gap:28px}
+
+  /* Footer */
+  footer{padding:64px 0 28px}
+  @media (max-width:760px){footer{padding-bottom:110px}}
+  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.3fr;gap:32px}
+  @media (max-width:1000px){.fgrid{grid-template-columns:1fr 1fr 1fr}.fbrand{grid-column:1/-1}.fget{grid-column:1/-1}}
+  @media (max-width:560px){.fgrid{grid-template-columns:1fr 1fr}.fbrand,.fget{grid-column:1/-1}}
+  .fbrand img{height:32px;width:auto}
+  .fbrand p{color:var(--on-night-soft);margin:16px 0 18px;max-width:38ch;font-size:.95rem}
+  .ftrust{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+  .ftrust li{font-size:.8rem;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:var(--on-night)}
+  .fcol{display:flex;flex-direction:column;gap:10px}
+  .fcol b{color:var(--on-night);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+  .fcol a{color:var(--on-night-soft);text-decoration:none;font-size:.95rem;width:fit-content;position:relative;padding:2px 0}
+  .fcol a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+  .fcol a:hover{color:var(--on-night)}
+  .fcol a:hover::after{transform:scaleX(1)}
+  .fdl{display:flex !important;align-items:center;gap:12px;padding:10px 16px 10px 10px !important;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--on-night) !important;transition:background .3s,transform .3s var(--ease)}
+  .fdl::after{display:none}
+  .fdl:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+  .fdl img{width:36px;height:36px;border-radius:10px}
+  .fdl span{display:flex;flex-direction:column;font-weight:700;line-height:1.2}
+  .fdl small{font-weight:500;font-size:.75rem;color:var(--on-night-soft)}
+  .fsoon{font-size:.82rem;color:var(--on-night-soft)}
+  .fbottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);color:var(--on-night-soft);font-size:.85rem}
 </style>
 </head>
 <body class="loading">
@@ -549,7 +609,7 @@
       <p class="intro">Payments arrive from bank SMS, bank emails and UPI app notifications — and land in your ledger on their own, sorted, with each account kept separate.</p>
     </div>
     <div class="bento stagger">
-      <div class="tile dark t-a">
+      <div class="tile hero-tile t-a">
         <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg></div>
         <h3>Automatic — and never counted twice.</h3>
         <p>Paisook reads bank alerts from SMS, email and payment-app notifications. When the same payment shows up more than once, it's matched by reference, amount, account and time.</p>
@@ -719,12 +779,51 @@
 </section>
 
 <footer data-theme="dark">
-  <div class="wrap in">
-    <div class="brand">
-      <img src="logo-h-white.png" alt="Paisook" width="94" height="24">
-      <span>by Aadhya Ventures · Mumbai, India</span>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <img src="logo-h-white.png" alt="Paisook" width="126" height="32">
+        <p>Your family's money book. Every UPI, card and bank payment recorded from your bank's own alerts — private, free, made in India.</p>
+        <ul class="ftrust">
+          <li>🔒 Read on your phone</li>
+          <li>🚫 No ads · no loans</li>
+          <li>🇮🇳 DPDP Act, 2023</li>
+        </ul>
+      </div>
+      <nav class="fcol" aria-label="Product">
+        <b>Product</b>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#friends">Paid for a friend</a>
+        <a href="#privacy">Privacy &amp; backup</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <nav class="fcol" aria-label="Company">
+        <b>Company</b>
+        <a href="about.html">About Paisook</a>
+        <a href="about.html#founders">Founders</a>
+        <a href="#play">Google Play</a>
+      </nav>
+      <nav class="fcol" aria-label="Legal">
+        <b>Legal</b>
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy.html#12-your-rights">Your data rights</a>
+        <a href="privacy.html#16-grievance-officer-and-complaints">Grievances</a>
+      </nav>
+      <div class="fcol fget">
+        <b>Get the app</b>
+        <a class="fdl" href="Paisook-small.apk" download="Paisook.apk" type="application/vnd.android.package-archive">
+          <img src="icon.png" alt="" width="36" height="36">
+          <span><small>Free for Android</small>Download Paisook</span>
+        </a>
+        <span class="fsoon">Coming soon on Google Play</span>
+      </div>
     </div>
-    <nav aria-label="Footer"><a href="about.html">About</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="#faq">FAQ</a></nav>
+    <div class="fbottom">
+      <span>© <span id="yr">2026</span> Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span>
+      <span>Made with care in Mumbai, India 🇮🇳</span>
+    </div>
   </div>
 </footer>
 
@@ -780,6 +879,8 @@
     $('openChrome').href = 'intent://' + location.href.replace(/^https?:\/\//, '') + '#Intent;scheme=https;package=com.android.chrome;end';
     $('inapp').hidden = false;
   }
+
+  var yr = document.getElementById('yr'); if (yr) yr.textContent = new Date().getFullYear();
 
   // Live version from the update feed.
   fetch('version.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (v) {
