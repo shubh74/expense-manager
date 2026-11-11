@@ -1,7 +1,6 @@
-# Expense Manager
+# Paisook
 
-Cash, UPI and bank spending in one calm ledger — bank SMS do the typing.
+Your family's money book — every UPI, card and bank payment recorded from your bank's own alerts.
+Free Android app by Aadhya Ventures, Mumbai.
 
-**Download:** https://shubh74.github.io/expense-manager
-
-Developed & made by **Aadhya Ventures** · Made in India
+Site: https://shubh74.github.io/expense-manager/

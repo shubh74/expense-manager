@@ -1,12 +1,12 @@
 {
-  "version": "1.3.0",
-  "build": 6,
+  "version": "1.13.0",
+  "build": 20,
   "url": "https://shubh74.github.io/expense-manager/",
   "notes": [
-    "Split bills with groups and collect by UPI QR",
-    "Reports & ITR: financial-year ledger with CSV export",
-    "Credit card limits and reminders no longer counted as payments",
-    "Bank badges, Jio Payments Bank and more SMS formats",
-    "Update alerts inside the app"
+    "Expense Manager is now Paisook — new name, new logo",
+    "About Paisook: our story, founders and promises",
+    "New Terms of Use and Privacy Policy (DPDP Act, 2023)",
+    "Backup like WhatsApp to your own Google Drive",
+    "Points: 1 point for every ₹5 you spend online"
   ]
 }
