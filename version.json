@@ -1,12 +1,11 @@
 {
-  "version": "1.13.0",
-  "build": 20,
+  "version": "1.15.0",
+  "build": 22,
   "url": "https://shubh74.github.io/expense-manager/",
   "notes": [
-    "Expense Manager is now Paisook — new name, new logo",
-    "About Paisook: our story, founders and promises",
-    "New Terms of Use and Privacy Policy (DPDP Act, 2023)",
-    "Backup like WhatsApp to your own Google Drive",
-    "Points: 1 point for every ₹5 you spend online"
+    "Paid for a friend? Only your share counts as your spending — their payback isn't counted as income",
+    "Paybacks by UPI are matched automatically, or Paisook asks you",
+    "New members: 1 month of Pro, free",
+    "Expense Manager is now Paisook — new name, new logo"
   ]
 }
