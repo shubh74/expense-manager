@@ -63,7 +63,7 @@
 </div></nav>
 <div class="hero"><div class="in">
   <h1>Privacy Policy</h1>
-  <p class="meta">Paisook by Aadhya Ventures · Effective 11 November 2026 · Version legal-2026-11</p>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 12 November 2026 · Version legal-2026-11b</p>
   <p class="lede">How Paisook collects, uses, shares and protects your personal data, and your rights under the DPDP Act, 2023.</p>
 </div></div>
 <main class="wrap">
@@ -92,12 +92,13 @@
   <ul>
     <li>Your ledger — transactions, balances, budgets, receipts and messages we read — stays on your phone.</li>
     <li>We read bank SMS, bank emails and payment notifications on your device only, and never upload their text.</li>
-    <li>Backups go to your own Google Drive, encrypted with a passphrase only you know.</li>
+    <li>Backups go to your own Google Drive, encrypted on your phone — with a key kept in your account, or a passphrase only you know.</li>
     <li>We never sell your data and never use it for advertising.</li>
   </ul>
   <h2 id="3-personal-data-we-process-and-why">3. Personal data we process, and why</h2>
   <p>Each item below says what we process, why, and where it is kept.</p>
   <ul>
+    <li>Backup key (optional) — if you choose backup without a passphrase, a random encryption key for your Drive backup. Purpose: let you restore on a new phone by signing in. Our servers, readable only by your signed-in account; it is useless without your Drive file, which we never receive. Deleted with your account.</li>
     <li>Account details — name, email, sign-in method (email or Google), app version, device platform, dates joined and last active. Purpose: create and secure your account, keep the service working, count active users. Stored on our servers (Google Firebase).</li>
     <li>Consent record — when and to which version you agreed. Purpose: prove and manage your consent. Our servers.</li>
     <li>Plan and payments — plan status, validity and the UPI reference, amount and date you submit when buying Pro. Purpose: switch on Pro, handle refunds, comply with tax and accounting law. Our servers.</li>
@@ -119,7 +120,8 @@
   <h2 id="6-google-user-data-gmail-and-google-drive">6. Google user data (Gmail and Google Drive)</h2>
   <ul>
     <li>Gmail (optional, read-only gmail.readonly): when you connect Gmail, the app searches only for alert emails from banks and card issuers, downloads them from Google straight to your phone, and saves only the transaction found (amount, date, payee, account). Email content is never sent to or stored on our servers or any third party. The app cannot send, delete or change email. Disconnect any time in Settings → Bank emails, or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-    <li>Google Drive (optional, drive.appdata): the app saves one encrypted backup file in a hidden app folder of your own Drive. It cannot see any of your other files.</li>
+    <li>Google Drive (optional, drive.appdata): the app saves one encrypted backup file in a hidden app folder of your own Drive. It cannot see any of your other files. We never receive the backup file.</li>
+    <li>Android phone backup: if Google backup is on in your phone's settings, Android may also save the app's data (ledger and settings, not the app-lock keys or receipt photos) to your Google account, encrypted, and bring it back when you reinstall. This is run by Android and Google, not by us; you can turn it off in your phone's settings.</li>
   </ul>
   <p>Paisook's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide these user-facing features, is not used for advertising, is not sold, is not transferred except as needed to provide the feature or as required by law, and is not read by humans except with your consent, for security, or as required by law.</p>
   <h2 id="7-who-we-share-data-with">7. Who we share data with</h2>
@@ -137,7 +139,7 @@
     <li>Account, consent, plan and points records: while your account is active, and then erased within 30 days of account deletion or consent withdrawal, except where a law requires us to keep something longer (for example, payment records for tax and accounting).</li>
     <li>Inactive accounts: if you do not use the Service for 3 years, we will erase your account record, after telling you at least 48 hours before.</li>
     <li>Security and processing logs: kept for at least one year, as the DPDP Rules require, then erased.</li>
-    <li>On-device data: until you delete it, sign out, or uninstall the app. Your Drive backup stays in your Drive until you delete it.</li>
+    <li>On-device data: until you delete it, sign out, or uninstall the app. Your Drive backup and any Android phone backup stay in your Google account until you delete them. A backup key, if you use one, is erased when you delete your account.</li>
   </ul>
   <h2 id="10-security">10. Security</h2>
   <p>We follow reasonable security practices as required by the IT Rules, 2011 and the DPDP Rules, 2025, including encryption in transit (TLS), encryption of backups with AES-256 on your device, strict server access rules that let each user reach only their own records, code obfuscation, optional app lock, and limited administrative access. No system is perfectly secure, but we work to protect your data and review our safeguards regularly.</p>

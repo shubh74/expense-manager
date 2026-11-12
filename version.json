@@ -1,11 +1,12 @@
 {
-  "version": "1.15.0",
-  "build": 22,
+  "version": "1.17.0",
+  "build": 3000,
   "url": "https://shubh74.github.io/expense-manager/",
   "notes": [
-    "Paid for a friend? Only your share counts as your spending — their payback isn't counted as income",
-    "Paybacks by UPI are matched automatically, or Paisook asks you",
-    "New members: 1 month of Pro, free",
-    "Expense Manager is now Paisook — new name, new logo"
+    "Backup is now free for everyone — turn on daily backup and a new phone gets everything back with one tap, no passphrase",
+    "Download your data as an Excel sheet (transactions, accounts, splits, reminders)",
+    "Jio Payments Bank alerts recognised, and the same bank account is no longer split into several",
+    "Bank emails that arrive hours after the SMS are no longer counted twice",
+    "Month-end settle-up: who owes you and whom you owe, emailed to yourself"
   ]
 }
