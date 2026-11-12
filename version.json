@@ -1,12 +1,12 @@
 {
-  "version": "1.17.1",
-  "build": 3001,
+  "version": "1.18.0",
+  "build": 3002,
   "url": "https://shubh74.github.io/expense-manager/",
   "notes": [
+    "A fresh new look: cleaner screens, bolder numbers, colourful categories and a proper dark mode",
+    "Your month at a glance on a new Month Card",
+    "Every tab in the bottom bar is now labelled",
     "Merging two accounts now really combines them: balances add up, and new alerts go into the merged account",
-    "Cleaner text across the app",
-    "Backup is now free for everyone: turn on daily backup and a new phone gets everything back with one tap, no passphrase",
-    "Download your data as an Excel sheet (transactions, accounts, splits, reminders)",
-    "Jio Payments Bank alerts recognised, and the same bank account is no longer split into several"
+    "Cleaner text across the app"
   ]
 }
