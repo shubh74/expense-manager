@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Data · Paisook</title>
+<meta name="description" content="How to delete your Paisook account and data, what is erased, and how long it takes.">
+<link rel="icon" href="icon.png">
+<link rel="preload" href="fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Self-hosted (SIL OFL 1.1): no request to Google or any third party. */
+  @font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-400.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-500.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-600.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:700 800;font-display:swap;src:url(fonts/figtree-700.woff2) format("woff2")}
+</style>
+<style>
+  :root{--paper:#F2F5F6;--surface:#FFFFFF;--ink:#0E1A1F;--soft:#4A5A62;--muted:#5B6B73;--hair:#E1E8EB;--accent:#0B6E79;--accent-soft:#DDF0F1}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 Figtree,system-ui,sans-serif}
+  .bar{position:sticky;top:0;z-index:2;background:rgba(11,11,12,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+  .bar .in{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;align-items:center}
+  .bar .brand{padding:0 8px 0 0;display:flex;align-items:center;min-height:44px} .bar .brand img{display:block;height:28px;width:auto}
+  .bar a{min-height:40px;display:inline-flex;align-items:center}
+  @media (max-width:520px){.bar .home{display:none} .bar .in a{padding:7px 9px;font-size:.88rem} .bar .brand img{height:22px} .bar .in{gap:2px;overflow-x:auto;scrollbar-width:none}}
+  @media (max-width:360px){.bar .in a{padding:6px 7px;font-size:.84rem} .bar .brand img{height:19px} .bar .in{padding:8px 10px}}
+  .bar a{padding:8px 14px;border-radius:12px;text-decoration:none;color:#A9B6BC;font-weight:600;font-size:.92rem;transition:color .2s,background .2s}
+  .bar a:hover{color:#EAF1F3}
+  .bar a.on{background:rgba(255,255,255,.08);color:#EAF1F3}
+  .bar .home{background:#EAF1F3;color:#081316 !important}
+  .hero{background:#081316;color:#EAF1F3;padding:46px 0 40px;margin-bottom:8px}
+  .hero .in{max-width:760px;margin:0 auto;padding:0 16px}
+  .hero h1{color:#EAF1F3}
+  .hero .meta{color:#A9B6BC}
+  .hero .lede{color:#CFCAbe}
+  @media (prefers-reduced-motion:no-preference){main h2,main p,main ul{animation:rise .8s cubic-bezier(.16,1,.3,1) both}}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}}
+  .bar .home{margin-left:auto}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 16px 72px}
+  h1{font:700 clamp(2rem,6vw,2.9rem)/1.1 Figtree,system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 8px}
+  h2{font:600 1.08rem/1.35 Figtree,sans-serif;margin:34px 0 10px;scroll-margin-top:72px}
+  p,li{color:var(--soft)} p{margin:0 0 10px}
+  ul{margin:0 0 10px;padding-left:20px} li{margin:6px 0}
+  .meta{color:var(--muted);font-size:.9rem;margin:0 0 18px}
+  .lede{font-size:1.06rem;color:var(--ink)}
+  .toc{background:var(--surface);border:1px solid var(--hair);border-radius:18px;padding:16px 18px;margin:22px 0 8px}
+  .toc b{display:block;margin-bottom:6px}
+  .toc ol{margin:0;padding-left:0;list-style:none;columns:2 240px;column-gap:24px}
+  .toc li{margin:4px 0;break-inside:avoid}
+  .toc a{color:var(--soft);text-decoration:none} .toc a:hover{color:var(--accent)}
+  a{color:var(--accent);text-underline-offset:3px}
+  .ft{margin-top:64px;background:#081316;color:#A9B6BC;padding:44px 0 26px;font-size:.9rem}
+  .ft .in{max-width:760px;margin:0 auto;padding:0 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 32px}
+  .ft img{display:block;height:28px;width:auto}
+  .ft p{margin:12px 0 0;color:#A9B6BC}
+  .ft nav{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
+  .ft a{color:#CFCABE;text-decoration:none} .ft a:hover{color:#EAF1F3}
+  .ft .bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+  /* Cookie notice: informational (we set no cookies), remembered locally. */
+  .ck{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;max-width:440px;display:flex;gap:12px;align-items:center;
+      background:#0E1A1F;color:#EAF1F3;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px 12px 12px 16px;box-shadow:0 12px 40px rgba(0,0,0,.25);font:500 .88rem/1.45 Figtree,system-ui,sans-serif}
+  .ck[hidden]{display:none}
+  .ck p{margin:0;color:#CFD9DD;flex:1}
+  .ck a{color:#7FD8DE}
+  .ck button{flex:none;min-height:40px;padding:0 18px;border:0;border-radius:12px;background:#EAF1F3;color:#0E1A1F;font:700 .9rem Figtree,system-ui,sans-serif;cursor:pointer}
+  @media (max-width:520px){.ck{left:12px;right:12px;max-width:none}}
+  @media (max-width:760px){.ck.above-dock{bottom:calc(92px + env(safe-area-inset-bottom))}}
+</style>
+</head>
+<body>
+<nav class="bar"><div class="in">
+  <a href="./" class="brand" aria-label="Paisook home"><img src="logo-h-white.png" alt="Paisook" height="28"></a>
+  <a href="about.html" class="">About</a>
+  <a href="terms.html" class="">Terms</a>
+  <a href="privacy.html" class="">Privacy</a>
+  <a href="cookies.html" class="">Cookies</a>
+  <a href="security.html" class="">Security</a>
+  <a href="./" class="home">Download</a>
+</div></nav>
+<div class="hero"><div class="in">
+  <h1>Delete Your Data</h1>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 14 November 2026 · Version legal-2026-11c</p>
+  <p class="lede">How to delete your Paisook account and data, what is erased, and how long it takes.</p>
+</div></div>
+<main class="wrap">
+  <div class="toc"><b>Contents</b><ol>
+    <li><a href="#1-delete-everything-from-the-app">1. Delete everything from the app</a></li>
+    <li><a href="#2-delete-without-the-app">2. Delete without the app</a></li>
+    <li><a href="#3-delete-only-some-data">3. Delete only some data</a></li>
+    <li><a href="#4-what-we-keep-and-for-how-long">4. What we keep, and for how long</a></li>
+    <li><a href="#5-before-you-delete">5. Before you delete</a></li>
+  </ol></div>
+  <h2 id="1-delete-everything-from-the-app">1. Delete everything from the app</h2>
+  <p>Open Paisook → Settings → Withdraw consent &amp; delete account → Delete. This happens immediately and:</p>
+  <ul>
+    <li>erases your account record, consent record, points and backup key from our servers;</li>
+    <li>removes you from any family ledger or group and deletes what you shared there (if you own it, the whole family ledger is deleted);</li>
+    <li>deletes your sign-in account;</li>
+    <li>erases the ledger, receipts, reminders, budgets and settings on this phone, and disconnects Gmail.</li>
+  </ul>
+  <h2 id="2-delete-without-the-app">2. Delete without the app</h2>
+  <p>If you no longer have the app or your phone, email the support email shown in Settings → Help &amp; feedback from the email address you signed up with, with the subject "Delete my account". We may ask you to confirm it is you. We acknowledge within 48 hours and complete the deletion within 30 days, then confirm by email.</p>
+  <h2 id="3-delete-only-some-data">3. Delete only some data</h2>
+  <ul>
+    <li>One entry: swipe it left in the ledger, or open it and tap Delete.</li>
+    <li>Everything on this phone: Settings → Erase all data on this phone.</li>
+    <li>Gmail access: Settings → Bank emails → Disconnect, or <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Your Drive backup: Settings → Backup → Delete backup from my Drive, or in Google Drive → Settings → Manage apps → Paisook → Delete hidden app data.</li>
+    <li>Android phone backup: turn it off in your phone's Settings → Google → Backup.</li>
+    <li>Uninstalling the app removes all data stored on the phone.</li>
+  </ul>
+  <h2 id="4-what-we-keep-and-for-how-long">4. What we keep, and for how long</h2>
+  <p>Only what the law makes us keep: records of Pro payments you made (UPI reference, amount and date) for as long as tax and accounting law requires, generally up to 8 years, and security logs for one year. These are kept securely, used for nothing else, and then erased. Copies in our providers' backups are overwritten on their normal cycle.</p>
+  <h2 id="5-before-you-delete">5. Before you delete</h2>
+  <p>Deletion cannot be undone. If you want to keep your records, use Settings → Download my data first to save a copy as Excel or JSON.</p>
+</main>
+<footer class="ft">
+  <div class="in">
+    <div>
+      <img src="logo-h-white.png" alt="Paisook" height="28">
+      <p>Your family's money book. Private, free, made in India.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="security.html">Security &amp; breach</a><a href="delete.html">Delete your data</a><a href="licenses.html">Open-source licences</a><a href="./#faq">FAQ</a>
+    </nav>
+  </div>
+  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made by Aadhya Ventures · Made in India 🇮🇳</span></div>
+</footer>
+<div class="ck" id="ck" role="region" aria-label="Cookie notice" hidden>
+  <p>No cookies, no trackers. This site sets no cookies and loads nothing from third parties. <a href="cookies.html">Cookie Policy</a></p>
+  <button type="button" id="ckok">OK</button>
+</div>
+<script>
+(function(){var k='paisook-cookie-notice',el=document.getElementById('ck');
+try{if(localStorage.getItem(k))return}catch(e){}
+el.hidden=false;
+document.getElementById('ckok').addEventListener('click',function(){el.hidden=true;try{localStorage.setItem(k,'seen')}catch(e){}});})();
+</script>
+</body>
+</html>

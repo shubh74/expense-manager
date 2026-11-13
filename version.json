@@ -1,12 +1,14 @@
 {
-  "version": "1.18.0",
-  "build": 3002,
+  "version": "1.18.3",
+  "build": 3005,
   "url": "https://shubh74.github.io/expense-manager/",
   "notes": [
-    "A fresh new look: cleaner screens, bolder numbers, colourful categories and a proper dark mode",
-    "Your month at a glance on a new Month Card",
-    "Every tab in the bottom bar is now labelled",
-    "Merging two accounts now really combines them: balances add up, and new alerts go into the merged account",
-    "Cleaner text across the app"
+    "Merged accounts now always add up their balances, even if you merged in an older version",
+    "Promo and cashback messages (like Ola Money credits) are no longer counted as money received",
+    "The Ledger now shows the whole month and scrolls all the way to the last entry",
+    "The Undo bar now disappears on its own after a few seconds",
+    "Update alerts arrive faster and work even when github.io is blocked",
+    "Credit cards no longer count as balance, and card bill payments are not counted as spending",
+    "New privacy, cookie, security, data deletion and open-source licence pages"
   ]
 }

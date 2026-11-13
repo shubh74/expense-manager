@@ -4,10 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Paisook</title>
-<meta name="description" content="How Paisook collects, uses, shares and protects your personal data, and your rights under the DPDP Act, 2023.">
+<meta name="description" content="How Paisook collects, uses, shares and protects your personal data, and your rights under India's DPDP Act, 2023 and the EU / UK GDPR.">
 <link rel="icon" href="icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Self-hosted (SIL OFL 1.1): no request to Google or any third party. */
+  @font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-400.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-500.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-600.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:700 800;font-display:swap;src:url(fonts/figtree-700.woff2) format("woff2")}
+</style>
 <style>
   :root{--paper:#F2F5F6;--surface:#FFFFFF;--ink:#0E1A1F;--soft:#4A5A62;--muted:#5B6B73;--hair:#E1E8EB;--accent:#0B6E79;--accent-soft:#DDF0F1}
   *{box-sizing:border-box}
@@ -51,6 +58,15 @@
   .ft nav{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
   .ft a{color:#CFCABE;text-decoration:none} .ft a:hover{color:#EAF1F3}
   .ft .bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+  /* Cookie notice: informational (we set no cookies), remembered locally. */
+  .ck{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;max-width:440px;display:flex;gap:12px;align-items:center;
+      background:#0E1A1F;color:#EAF1F3;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px 12px 12px 16px;box-shadow:0 12px 40px rgba(0,0,0,.25);font:500 .88rem/1.45 Figtree,system-ui,sans-serif}
+  .ck[hidden]{display:none}
+  .ck p{margin:0;color:#CFD9DD;flex:1}
+  .ck a{color:#7FD8DE}
+  .ck button{flex:none;min-height:40px;padding:0 18px;border:0;border-radius:12px;background:#EAF1F3;color:#0E1A1F;font:700 .9rem Figtree,system-ui,sans-serif;cursor:pointer}
+  @media (max-width:520px){.ck{left:12px;right:12px;max-width:none}}
+  @media (max-width:760px){.ck.above-dock{bottom:calc(92px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
@@ -59,93 +75,142 @@
   <a href="about.html" class="">About</a>
   <a href="terms.html" class="">Terms</a>
   <a href="privacy.html" class="on">Privacy</a>
+  <a href="cookies.html" class="">Cookies</a>
+  <a href="security.html" class="">Security</a>
   <a href="./" class="home">Download</a>
 </div></nav>
 <div class="hero"><div class="in">
   <h1>Privacy Policy</h1>
-  <p class="meta">Paisook by Aadhya Ventures · Effective 12 November 2026 · Version legal-2026-11b</p>
-  <p class="lede">How Paisook collects, uses, shares and protects your personal data, and your rights under the DPDP Act, 2023.</p>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 14 November 2026 · Version legal-2026-11c</p>
+  <p class="lede">How Paisook collects, uses, shares and protects your personal data, and your rights under India's DPDP Act, 2023 and the EU / UK GDPR.</p>
 </div></div>
 <main class="wrap">
   <div class="toc"><b>Contents</b><ol>
     <li><a href="#1-who-we-are">1. Who we are</a></li>
     <li><a href="#2-our-approach-in-short">2. Our approach in short</a></li>
     <li><a href="#3-personal-data-we-process-and-why">3. Personal data we process, and why</a></li>
-    <li><a href="#4-legal-basis">4. Legal basis</a></li>
-    <li><a href="#5-processing-on-your-device">5. Processing on your device</a></li>
-    <li><a href="#6-google-user-data-gmail-and-google-drive">6. Google user data (Gmail and Google Drive)</a></li>
-    <li><a href="#7-who-we-share-data-with">7. Who we share data with</a></li>
-    <li><a href="#8-transfers-outside-india">8. Transfers outside India</a></li>
-    <li><a href="#9-how-long-we-keep-data">9. How long we keep data</a></li>
-    <li><a href="#10-security">10. Security</a></li>
-    <li><a href="#11-personal-data-breach">11. Personal data breach</a></li>
-    <li><a href="#12-your-rights">12. Your rights</a></li>
-    <li><a href="#13-your-duties">13. Your duties</a></li>
-    <li><a href="#14-children">14. Children</a></li>
-    <li><a href="#15-cookies-and-tracking">15. Cookies and tracking</a></li>
-    <li><a href="#16-grievance-officer-and-complaints">16. Grievance Officer and complaints</a></li>
-    <li><a href="#17-changes-to-this-policy">17. Changes to this Policy</a></li>
+    <li><a href="#4-legal-basis-for-processing">4. Legal basis for processing</a></li>
+    <li><a href="#5-marketing-and-your-consent">5. Marketing and your consent</a></li>
+    <li><a href="#6-processing-on-your-device">6. Processing on your device</a></li>
+    <li><a href="#7-automated-decisions">7. Automated decisions</a></li>
+    <li><a href="#8-google-user-data-gmail-and-google-drive">8. Google user data (Gmail and Google Drive)</a></li>
+    <li><a href="#9-third-parties-we-disclose-data-to">9. Third parties we disclose data to</a></li>
+    <li><a href="#10-data-processing-agreements">10. Data processing agreements</a></li>
+    <li><a href="#11-transfers-outside-india">11. Transfers outside India</a></li>
+    <li><a href="#12-how-long-we-keep-data">12. How long we keep data</a></li>
+    <li><a href="#13-deleting-your-data">13. Deleting your data</a></li>
+    <li><a href="#14-security">14. Security</a></li>
+    <li><a href="#15-personal-data-breach">15. Personal data breach</a></li>
+    <li><a href="#16-your-rights">16. Your rights</a></li>
+    <li><a href="#17-your-duties">17. Your duties</a></li>
+    <li><a href="#18-children">18. Children</a></li>
+    <li><a href="#19-cookies-and-tracking">19. Cookies and tracking</a></li>
+    <li><a href="#20-grievance-officer-and-complaints">20. Grievance Officer and complaints</a></li>
+    <li><a href="#21-changes-to-this-policy">21. Changes to this Policy</a></li>
   </ol></div>
   <h2 id="1-who-we-are">1. Who we are</h2>
-  <p>Aadhya Ventures, based in Mumbai, Maharashtra, India, and founded by Tanmay Mehta (Founder) and Shubh Mehta (Co-founder), is the Data Fiduciary for personal data processed through Paisook. This Policy is our notice under Section 5 of the Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025, and our privacy policy under Rule 4 of the IT (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.</p>
+  <p>Aadhya Ventures, based in Mumbai, Maharashtra, India, and founded by Tanmay Mehta (Founder) and Shubh Mehta (Co-founder), is the Data Fiduciary (under the GDPR, the "controller") for personal data processed through Paisook. This Policy is our notice under Section 5 of the Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025, our privacy policy under Rule 4 of the IT (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and our information notice under Articles 13 and 14 of the GDPR.</p>
   <h2 id="2-our-approach-in-short">2. Our approach in short</h2>
   <ul>
     <li>Your ledger (transactions, balances, budgets, receipts and messages we read) stays on your phone.</li>
     <li>We read bank SMS, bank emails and payment notifications on your device only, and never upload their text.</li>
     <li>Backups go to your own Google Drive, encrypted on your phone, with a key kept in your account, or a passphrase only you know.</li>
-    <li>We never sell your data and never use it for advertising.</li>
+    <li>We never sell your data, never use it for advertising, and send no marketing.</li>
+    <li>No cookies, ad identifiers or third-party analytics, in the app or on our website.</li>
   </ul>
   <h2 id="3-personal-data-we-process-and-why">3. Personal data we process, and why</h2>
   <p>Each item below says what we process, why, and where it is kept.</p>
   <ul>
-    <li>Backup key (optional): if you choose backup without a passphrase, a random encryption key for your Drive backup. Purpose: let you restore on a new phone by signing in. Our servers, readable only by your signed-in account; it is useless without your Drive file, which we never receive. Deleted with your account.</li>
     <li>Account details: name, email, sign-in method (email or Google), app version, device platform, dates joined and last active. Purpose: create and secure your account, keep the service working, count active users. Stored on our servers (Google Firebase).</li>
     <li>Consent record: when and to which version you agreed. Purpose: prove and manage your consent. Our servers.</li>
     <li>Plan and payments: plan status, validity and the UPI reference, amount and date you submit when buying Pro. Purpose: switch on Pro, handle refunds, comply with tax and accounting law. Our servers.</li>
     <li>Points total: a single number. Purpose: run the points programme. Our servers.</li>
-    <li>Bank / UPI / card SMS (optional, SMS permission): read on your device to find payments. Only the recognised transaction is saved, on your device. OTPs and personal messages are ignored and never saved.</li>
+    <li>Backup key (optional): if you choose backup without a passphrase, a random encryption key for your Drive backup. Purpose: let you restore on a new phone by signing in. Our servers, readable only by your signed-in account; it is useless without your Drive file, which we never receive. Deleted with your account.</li>
+    <li>Bank / UPI / card SMS (optional, SMS permission): read on your device to find payments. Only the recognised transaction is saved, on your device. OTPs, promotional and personal messages are ignored and never saved.</li>
     <li>App notifications (optional, notification access): payment, bank and mail-app notifications are read on your device to find payments. Only the transaction is saved, on your device.</li>
-    <li>Bank alert emails (optional, Gmail): see section 6.</li>
+    <li>Bank alert emails (optional, Gmail): see section 8.</li>
     <li>Your ledger: transactions, accounts, budgets, goals, loans, bills, reminders, notes, receipts and tax tags. Purpose: the app's features. Your device only (and your encrypted backup, if you turn it on).</li>
     <li>Camera and photos (optional): to scan UPI QR codes and attach receipts. Processed and kept on your device.</li>
     <li>Family ledger and groups (optional): the summaries or entries you choose to share, your name, role, consent and optional UPI ID. Purpose: show them to the members you share with. Our servers.</li>
     <li>Support messages: what you send us. Purpose: answer you. Kept in our email.</li>
+    <li>Website visits: our hosting providers automatically log technical data such as IP address, browser and time of request, to deliver and secure the site (see section 9).</li>
   </ul>
   <p>We do not collect your contacts, location, call logs, UPI PIN, card numbers, CVV, bank passwords, Aadhaar or biometrics. App-lock fingerprint checks are done by Android; we never receive biometric data.</p>
-  <h2 id="4-legal-basis">4. Legal basis</h2>
-  <p>We process personal data on the basis of your consent (Section 6 of the DPDP Act), which you give by tapping "I agree" and by granting each optional permission, and for legitimate uses permitted by Section 7, such as data you voluntarily provide for a specific purpose and compliance with law or court orders.</p>
-  <p>Your consent is free, specific, informed, unconditional and unambiguous. Each optional permission can be refused without losing the rest of the app. You may give, manage and withdraw consent directly in the app or, once available, through a Consent Manager registered with the Data Protection Board.</p>
-  <h2 id="5-processing-on-your-device">5. Processing on your device</h2>
-  <p>Reading and understanding SMS, notifications and emails happens on your phone. Message text is not sent to us or anyone else. We keep app data in the app's private storage, which other apps cannot read.</p>
-  <h2 id="6-google-user-data-gmail-and-google-drive">6. Google user data (Gmail and Google Drive)</h2>
+  <h2 id="4-legal-basis-for-processing">4. Legal basis for processing</h2>
+  <p>In India, we process personal data on the basis of your consent (Section 6 of the DPDP Act), which you give by tapping "I agree" and by granting each optional permission, and for legitimate uses permitted by Section 7, such as data you voluntarily provide for a specific purpose and compliance with law or court orders. Your consent is free, specific, informed, unconditional and unambiguous; each optional permission can be refused without losing the rest of the app.</p>
+  <p>Under the GDPR, our legal bases are:</p>
+  <ul>
+    <li>Contract (Article 6(1)(b)): your account, sign-in, Pro plan, points, backup key and family sharing, which are needed to provide the Service you asked for.</li>
+    <li>Consent (Article 6(1)(a)): reading SMS, notifications and Gmail, camera access, and any marketing (we send none today). You can withdraw it at any time.</li>
+    <li>Legal obligation (Article 6(1)(c)): keeping payment records for tax and accounting, and answering lawful requests.</li>
+    <li>Legitimate interests (Article 6(1)(f)): keeping the Service and website secure, preventing fraud and points abuse, and counting active users with minimal data. You can object to this (section 16).</li>
+  </ul>
+  <p>You may give, manage and withdraw consent directly in the app or, once available, through a Consent Manager registered with the Data Protection Board of India.</p>
+  <h2 id="5-marketing-and-your-consent">5. Marketing and your consent</h2>
+  <ul>
+    <li>We do not send marketing. We do not send promotional emails, SMS, calls or push notifications, and we do not share or sell your data to anyone for their marketing.</li>
+    <li>Service messages are not marketing: account and security alerts, payment confirmations, update notices inside the app, replies to you, and notices of changes to our terms or this Policy.</li>
+    <li>If we ever want to send promotional messages, we will ask first with a separate, optional choice that is off by default. Saying no will never affect the Service. You can withdraw that consent at any time in the app or by writing to the support email shown in Settings → Help &amp; feedback, and we will stop within 10 days.</li>
+    <li>We will never use your transactions, SMS or emails to target offers at you.</li>
+  </ul>
+  <h2 id="6-processing-on-your-device">6. Processing on your device</h2>
+  <p>Reading and understanding SMS, notifications and emails happens on your phone. Message text is not sent to us or anyone else. We keep app data in the app's private storage, which other apps cannot read, and keep encryption keys in Android's secure keystore.</p>
+  <h2 id="7-automated-decisions">7. Automated decisions</h2>
+  <p>The app automatically sorts payments into categories and accounts on your phone. These are suggestions you can change at any time; we make no automated decisions that have legal or similarly significant effects on you, and we do no profiling for advertising, credit or insurance.</p>
+  <h2 id="8-google-user-data-gmail-and-google-drive">8. Google user data (Gmail and Google Drive)</h2>
   <ul>
     <li>Gmail (optional, read-only gmail.readonly): when you connect Gmail, the app searches only for alert emails from banks and card issuers, downloads them from Google straight to your phone, and saves only the transaction found (amount, date, payee, account). Email content is never sent to or stored on our servers or any third party. The app cannot send, delete or change email. Disconnect any time in Settings → Bank emails, or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
     <li>Google Drive (optional, drive.appdata): the app saves one encrypted backup file in a hidden app folder of your own Drive. It cannot see any of your other files. We never receive the backup file.</li>
     <li>Android phone backup: if Google backup is on in your phone's settings, Android may also save the app's data (ledger and settings, not the app-lock keys or receipt photos) to your Google account, encrypted, and bring it back when you reinstall. This is run by Android and Google, not by us; you can turn it off in your phone's settings.</li>
   </ul>
   <p>Paisook's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide these user-facing features, is not used for advertising, is not sold, is not transferred except as needed to provide the feature or as required by law, and is not read by humans except with your consent, for security, or as required by law.</p>
-  <h2 id="7-who-we-share-data-with">7. Who we share data with</h2>
-  <p>We do not sell or rent personal data. We share it only:</p>
+  <h2 id="9-third-parties-we-disclose-data-to">9. Third parties we disclose data to</h2>
+  <p>We do not sell, rent or trade personal data. The only parties that receive any of it are:</p>
   <ul>
-    <li>with our Data Processors under contract: Google LLC / Google Cloud (Firebase Authentication and Cloud Firestore) to run accounts and shared features;</li>
-    <li>with people you choose: family or group members see what you share with them;</li>
-    <li>with apps you open: when you pay, the payee details and amount are handed to the UPI app you pick;</li>
-    <li>when required by law, court order or a lawful request from a government agency, or to protect the rights and safety of users and the public.</li>
+    <li>Google LLC (Firebase Authentication and Cloud Firestore), our Data Processor: account, consent, plan, points, backup key and family-sharing records, to run the Service. Servers may be outside India.</li>
+    <li>GitHub, Inc. (GitHub Pages) and Vercel Inc., which host our website and app downloads: technical request logs (IP address, browser, time) when you visit or download. They process this to deliver and secure the site.</li>
+    <li>Google, as your own provider, when you choose to use it: Google Sign-In, your Gmail (read on your phone) and your Google Drive (your encrypted backup). This data goes between your phone and your Google account, not to us.</li>
+    <li>The UPI app you pick when you pay: the payee details and amount are handed to it.</li>
+    <li>People you choose: family or group members see what you share with them.</li>
+    <li>Authorities: when required by law, court order or a lawful request from a government agency, or to protect the rights and safety of users and the public. Where the law allows, we will tell you.</li>
+    <li>A buyer or successor, if Aadhya Ventures is reorganised or sold, under this Policy, with notice to you.</li>
   </ul>
-  <h2 id="8-transfers-outside-india">8. Transfers outside India</h2>
-  <p>Our service providers may store or process data on servers outside India. Such transfers are made as permitted under Section 16 of the DPDP Act and will stop for any country the Government of India restricts.</p>
-  <h2 id="9-how-long-we-keep-data">9. How long we keep data</h2>
+  <p>The app contains no advertising, analytics, attribution or crash-reporting SDKs.</p>
+  <h2 id="10-data-processing-agreements">10. Data processing agreements</h2>
+  <p>Every Data Processor that handles personal data for us does so under a written contract that limits it to our instructions, requires confidentiality and security safeguards, requires it to help us honour your rights and report breaches, and to delete data when the service ends, as Section 8(2) of the DPDP Act and Article 28 of the GDPR require:</p>
   <ul>
-    <li>Account, consent, plan and points records: while your account is active, and then erased within 30 days of account deletion or consent withdrawal, except where a law requires us to keep something longer (for example, payment records for tax and accounting).</li>
-    <li>Inactive accounts: if you do not use the Service for 3 years, we will erase your account record, after telling you at least 48 hours before.</li>
-    <li>Security and processing logs: kept for at least one year, as the DPDP Rules require, then erased.</li>
-    <li>On-device data: until you delete it, sign out, or uninstall the app. Your Drive backup and any Android phone backup stay in your Google account until you delete them. A backup key, if you use one, is erased when you delete your account.</li>
+    <li>Google: Firebase Data Processing and Security Terms and the Google Cloud Data Processing Addendum, which include the EU Standard Contractual Clauses.</li>
+    <li>Vercel: Vercel Data Processing Addendum, which includes the EU Standard Contractual Clauses.</li>
+    <li>GitHub: GitHub Privacy Statement and, where applicable, the GitHub Data Protection Agreement.</li>
   </ul>
-  <h2 id="10-security">10. Security</h2>
-  <p>We follow reasonable security practices as required by the IT Rules, 2011 and the DPDP Rules, 2025, including encryption in transit (TLS), encryption of backups with AES-256 on your device, strict server access rules that let each user reach only their own records, code obfuscation, optional app lock, and limited administrative access. No system is perfectly secure, but we work to protect your data and review our safeguards regularly.</p>
-  <h2 id="11-personal-data-breach">11. Personal data breach</h2>
-  <p>If a personal data breach occurs, we will inform you and the Data Protection Board of India without delay, describing what happened, the likely impact, what we are doing and what you can do, and will send the Board a detailed report within 72 hours, as the DPDP Rules require. Cyber-security incidents are reported to CERT-In within 6 hours as required by its Directions.</p>
-  <h2 id="12-your-rights">12. Your rights</h2>
+  <p>We remain responsible for our processors. We review them when we add or change one and will update this list before any new processor receives your data.</p>
+  <h2 id="11-transfers-outside-india">11. Transfers outside India</h2>
+  <p>Our processors may store or process data on servers outside India. Such transfers are made as permitted under Section 16 of the DPDP Act and will stop for any country the Government of India restricts. For people in the EU / UK, transfers rely on the European Commission's Standard Contractual Clauses (and the UK Addendum) in our processors' agreements, plus the safeguards in section 14.</p>
+  <h2 id="12-how-long-we-keep-data">12. How long we keep data</h2>
+  <ul>
+    <li>Account, consent and points records: while your account is active; erased within 30 days of account deletion or consent withdrawal.</li>
+    <li>Backup key: until you delete your account or switch to a passphrase.</li>
+    <li>Family and group data: until you stop sharing, leave, or the owner deletes the group.</li>
+    <li>Payment records (UPI reference, amount, date): for as long as tax and accounting law requires, generally up to 8 years, then erased. Only this minimum is kept after account deletion.</li>
+    <li>Support emails: up to 2 years after the conversation ends, unless needed for a legal claim.</li>
+    <li>Inactive accounts: if you do not use the Service for 3 years, we erase your account record, after telling you at least 48 hours before.</li>
+    <li>Security and processing logs: kept for at least one year, as the DPDP Rules require, then erased. Website hosting logs are kept by our hosts for their own short periods.</li>
+    <li>On your device: until you delete it, erase it in Settings, or uninstall the app. Your Drive backup and any Android phone backup stay in your Google account until you delete them (see section 13).</li>
+  </ul>
+  <h2 id="13-deleting-your-data">13. Deleting your data</h2>
+  <p>You can delete your data at any time, without giving a reason:</p>
+  <ul>
+    <li>Everything: Settings → Withdraw consent &amp; delete account. This erases your account, consent, points and backup key from our servers, removes you from any family ledger (deleting what you shared), deletes your sign-in, and erases the ledger on your phone, immediately.</li>
+    <li>Only this phone: Settings → Erase all data on this phone.</li>
+    <li>Your Drive backup: Settings → Backup → Delete backup from my Drive, or in Google Drive under Settings → Manage apps → Paisook → Delete hidden app data.</li>
+    <li>Without the app: write to the support email shown in Settings → Help &amp; feedback from your registered email with the subject "Delete my account". We confirm within 48 hours and complete it within 30 days.</li>
+  </ul>
+  <p>Copies in our processors' backups are overwritten on their normal cycle. Full steps are on our <a href="delete.html">Data Deletion page</a>.</p>
+  <h2 id="14-security">14. Security</h2>
+  <p>We follow reasonable security practices as required by the IT Rules, 2011 and the DPDP Rules, 2025, including encryption in transit (TLS), AES-256-GCM encryption of backups on your device, keys in Android's secure keystore, strict server rules that let each user reach only their own records, code obfuscation, optional app lock, signed updates, and limited administrative access. No system is perfectly secure, but we work to protect your data and review our safeguards regularly. Details are in our <a href="security.html">Security &amp; Data Breach Policy</a>.</p>
+  <h2 id="15-personal-data-breach">15. Personal data breach</h2>
+  <p>If a personal data breach occurs, we will inform you and the Data Protection Board of India without delay, describing what happened, the likely impact, what we are doing and what you can do, and will send the Board a detailed report within 72 hours, as the DPDP Rules require. Cyber-security incidents are reported to CERT-In within 6 hours as required by its Directions. Where the GDPR applies, we notify the competent supervisory authority within 72 hours. Our full procedure is in the <a href="security.html">Security &amp; Data Breach Policy</a>.</p>
+  <h2 id="16-your-rights">16. Your rights</h2>
   <p>Under the DPDP Act you have the right to:</p>
   <ul>
     <li>Access: a summary of your personal data we process and the processing activities, and who we have shared it with (Section 11). Settings → Download my data gives you a copy of your ledger.</li>
@@ -154,17 +219,27 @@
     <li>Grievance redressal: to complain to our Grievance Officer (Section 13).</li>
     <li>Nominate: to nominate someone to exercise your rights if you die or become incapable (Section 14).</li>
   </ul>
-  <p>To exercise a right, use the in-app options or write to the support email shown in Settings → Help &amp; feedback from your registered email. We may need to verify your identity. We respond within the time the law requires.</p>
-  <h2 id="13-your-duties">13. Your duties</h2>
+  <p>If you are in the EU, EEA or UK, the GDPR also gives you the right to:</p>
+  <ul>
+    <li>access your data and receive a copy (Article 15);</li>
+    <li>rectify inaccurate data (Article 16) and erase it (Article 17);</li>
+    <li>restrict processing (Article 18);</li>
+    <li>data portability: receive your data in a machine-readable format (JSON from Download my data) or have it sent to another provider (Article 20);</li>
+    <li>object to processing based on legitimate interests (Article 21);</li>
+    <li>not be subject to solely automated decisions with legal or similarly significant effects (Article 22); we make none;</li>
+    <li>withdraw consent at any time, and lodge a complaint with your local data protection authority.</li>
+  </ul>
+  <p>To exercise a right, use the in-app options or write to the support email shown in Settings → Help &amp; feedback from your registered email. We may need to verify your identity. We respond within one month (GDPR) and in any case within the time Indian law requires, free of charge.</p>
+  <h2 id="17-your-duties">17. Your duties</h2>
   <p>Section 15 of the DPDP Act asks you to comply with the law, not impersonate anyone, not suppress material information, not file false or frivolous complaints, and give only verifiably authentic information when asking for correction.</p>
-  <h2 id="14-children">14. Children</h2>
+  <h2 id="18-children">18. Children</h2>
   <p>The Service is not for anyone under 18. We do not knowingly process children's personal data and do not track or target children. If we find an account belongs to a child, we will erase it.</p>
-  <h2 id="15-cookies-and-tracking">15. Cookies and tracking</h2>
-  <p>The app uses no advertising identifiers, ad trackers or third-party analytics. Our website uses no cookies; it loads fonts from Google Fonts.</p>
-  <h2 id="16-grievance-officer-and-complaints">16. Grievance Officer and complaints</h2>
+  <h2 id="19-cookies-and-tracking">19. Cookies and tracking</h2>
+  <p>The app uses no cookies, advertising identifiers, ad trackers or third-party analytics. Our website sets no cookies, loads no trackers or third-party resources (fonts are served from our own site), and stores only your choice on the cookie notice in your browser. See our <a href="cookies.html">Cookie Policy</a>.</p>
+  <h2 id="20-grievance-officer-and-complaints">20. Grievance Officer and complaints</h2>
   <p>Grievance Officer, Aadhya Ventures · Email: the support email shown in Settings → Help &amp; feedback · Based in Mumbai, Maharashtra</p>
-  <p>We acknowledge grievances within 48 hours and resolve them within 30 days, and in any case within 90 days as the DPDP Rules allow. If you are not satisfied, you may complain to the Data Protection Board of India.</p>
-  <h2 id="17-changes-to-this-policy">17. Changes to this Policy</h2>
+  <p>We acknowledge grievances within 48 hours and resolve them within 30 days, and in any case within 90 days as the DPDP Rules allow. If you are not satisfied, you may complain to the Data Protection Board of India or, in the EU / UK, to your data protection authority.</p>
+  <h2 id="21-changes-to-this-policy">21. Changes to this Policy</h2>
   <p>We may update this Policy. The current version is always in the app and on our website. If a change affects how we use your data, we will tell you in the app and ask for your consent again where required.</p>
 </main>
 <footer class="ft">
@@ -174,10 +249,20 @@
       <p>Your family's money book. Private, free, made in India.</p>
     </div>
     <nav aria-label="Footer">
-      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="./#faq">FAQ</a>
+      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="security.html">Security &amp; breach</a><a href="delete.html">Delete your data</a><a href="licenses.html">Open-source licences</a><a href="./#faq">FAQ</a>
     </nav>
   </div>
-  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made in Mumbai, India 🇮🇳</span></div>
+  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made by Aadhya Ventures · Made in India 🇮🇳</span></div>
 </footer>
+<div class="ck" id="ck" role="region" aria-label="Cookie notice" hidden>
+  <p>No cookies, no trackers. This site sets no cookies and loads nothing from third parties. <a href="cookies.html">Cookie Policy</a></p>
+  <button type="button" id="ckok">OK</button>
+</div>
+<script>
+(function(){var k='paisook-cookie-notice',el=document.getElementById('ck');
+try{if(localStorage.getItem(k))return}catch(e){}
+el.hidden=false;
+document.getElementById('ckok').addEventListener('click',function(){el.hidden=true;try{localStorage.setItem(k,'seen')}catch(e){}});})();
+</script>
 </body>
 </html>

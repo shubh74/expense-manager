@@ -6,8 +6,15 @@
 <title>About Paisook · Paisook</title>
 <meta name="description" content="The story behind the name, the people who build it, and what we promise you.">
 <link rel="icon" href="icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Self-hosted (SIL OFL 1.1): no request to Google or any third party. */
+  @font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-400.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-500.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-600.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:700 800;font-display:swap;src:url(fonts/figtree-700.woff2) format("woff2")}
+</style>
 <style>
   :root{--paper:#F2F5F6;--surface:#FFFFFF;--ink:#0E1A1F;--soft:#4A5A62;--muted:#5B6B73;--hair:#E1E8EB;--accent:#0B6E79;--accent-soft:#DDF0F1}
   *{box-sizing:border-box}
@@ -51,6 +58,15 @@
   .ft nav{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
   .ft a{color:#CFCABE;text-decoration:none} .ft a:hover{color:#EAF1F3}
   .ft .bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+  /* Cookie notice: informational (we set no cookies), remembered locally. */
+  .ck{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;max-width:440px;display:flex;gap:12px;align-items:center;
+      background:#0E1A1F;color:#EAF1F3;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px 12px 12px 16px;box-shadow:0 12px 40px rgba(0,0,0,.25);font:500 .88rem/1.45 Figtree,system-ui,sans-serif}
+  .ck[hidden]{display:none}
+  .ck p{margin:0;color:#CFD9DD;flex:1}
+  .ck a{color:#7FD8DE}
+  .ck button{flex:none;min-height:40px;padding:0 18px;border:0;border-radius:12px;background:#EAF1F3;color:#0E1A1F;font:700 .9rem Figtree,system-ui,sans-serif;cursor:pointer}
+  @media (max-width:520px){.ck{left:12px;right:12px;max-width:none}}
+  @media (max-width:760px){.ck.above-dock{bottom:calc(92px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
@@ -59,11 +75,13 @@
   <a href="about.html" class="on">About</a>
   <a href="terms.html" class="">Terms</a>
   <a href="privacy.html" class="">Privacy</a>
+  <a href="cookies.html" class="">Cookies</a>
+  <a href="security.html" class="">Security</a>
   <a href="./" class="home">Download</a>
 </div></nav>
 <div class="hero"><div class="in">
   <h1>About Paisook</h1>
-  <p class="meta">Paisook by Aadhya Ventures · Effective 12 November 2026 · Version legal-2026-11b</p>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 14 November 2026 · Version legal-2026-11c</p>
   <p class="lede">The story behind the name, the people who build it, and what we promise you.</p>
 </div></div>
 <main class="wrap">
@@ -71,7 +89,7 @@
   <h2 id="the-name">The name</h2>
   <p>Paisook (पैसुक) brings together two words: "paisa" (money) and "book", the khata or bahi that Indian families have kept for generations to note every rupee in and out. Say it aloud and you also hear "sukh": peace of mind. That is the whole idea: one honest money book for your home, that gives you calm instead of stress.</p>
   <h2 id="the-logo">The logo</h2>
-  <p>The mark is a bold "P" for Paisook. Inside it, three rising bars stand for money that grows when you can see where it goes, and the soft fold at its base is a page turning in your money book. It is drawn in simple black and white so it feels quiet and trustworthy, the way a family ledger should.</p>
+  <p>The mark is a bold "P" for Paisook. Inside it, three rising bars stand for money that grows when you can see where it goes, and the soft fold at its base is a page turning in your money book. It sits on a deep peacock teal, calm and trustworthy, the way a family ledger should feel.</p>
   <h2 id="why-we-built-it">Why we built it</h2>
   <p>Most of our spending today happens through UPI, cards and bank transfers, spread across many apps and many SMS. Families end up guessing where the month went. We wanted one place where payments record themselves from your bank's own alerts, cash is just as easy to note, and your family can see the shared picture, without selling your data or pushing loans at you.</p>
   <h2 id="what-we-promise">What we promise</h2>
@@ -88,7 +106,7 @@
     <li>Shubh Mehta, Co-founder</li>
   </ul>
   <h2 id="the-company">The company</h2>
-  <p>Paisook is developed and operated by Aadhya Ventures, based in Mumbai, Maharashtra, India.</p>
+  <p>Paisook is made by Aadhya Ventures, based in Mumbai, Maharashtra. Made in India 🇮🇳</p>
   <p>Contact: the support email shown in Settings → Help &amp; feedback</p>
 </main>
 <footer class="ft">
@@ -98,10 +116,20 @@
       <p>Your family's money book. Private, free, made in India.</p>
     </div>
     <nav aria-label="Footer">
-      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="./#faq">FAQ</a>
+      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="security.html">Security &amp; breach</a><a href="delete.html">Delete your data</a><a href="licenses.html">Open-source licences</a><a href="./#faq">FAQ</a>
     </nav>
   </div>
-  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made in Mumbai, India 🇮🇳</span></div>
+  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made by Aadhya Ventures · Made in India 🇮🇳</span></div>
 </footer>
+<div class="ck" id="ck" role="region" aria-label="Cookie notice" hidden>
+  <p>No cookies, no trackers. This site sets no cookies and loads nothing from third parties. <a href="cookies.html">Cookie Policy</a></p>
+  <button type="button" id="ckok">OK</button>
+</div>
+<script>
+(function(){var k='paisook-cookie-notice',el=document.getElementById('ck');
+try{if(localStorage.getItem(k))return}catch(e){}
+el.hidden=false;
+document.getElementById('ckok').addEventListener('click',function(){el.hidden=true;try{localStorage.setItem(k,'seen')}catch(e){}});})();
+</script>
 </body>
 </html>

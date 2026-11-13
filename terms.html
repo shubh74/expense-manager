@@ -6,8 +6,15 @@
 <title>Terms of Use · Paisook</title>
 <meta name="description" content="The agreement between you and Aadhya Ventures for using Paisook.">
 <link rel="icon" href="icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Self-hosted (SIL OFL 1.1): no request to Google or any third party. */
+  @font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-400.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-500.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-600.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:700 800;font-display:swap;src:url(fonts/figtree-700.woff2) format("woff2")}
+</style>
 <style>
   :root{--paper:#F2F5F6;--surface:#FFFFFF;--ink:#0E1A1F;--soft:#4A5A62;--muted:#5B6B73;--hair:#E1E8EB;--accent:#0B6E79;--accent-soft:#DDF0F1}
   *{box-sizing:border-box}
@@ -51,6 +58,15 @@
   .ft nav{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
   .ft a{color:#CFCABE;text-decoration:none} .ft a:hover{color:#EAF1F3}
   .ft .bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+  /* Cookie notice: informational (we set no cookies), remembered locally. */
+  .ck{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;max-width:440px;display:flex;gap:12px;align-items:center;
+      background:#0E1A1F;color:#EAF1F3;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px 12px 12px 16px;box-shadow:0 12px 40px rgba(0,0,0,.25);font:500 .88rem/1.45 Figtree,system-ui,sans-serif}
+  .ck[hidden]{display:none}
+  .ck p{margin:0;color:#CFD9DD;flex:1}
+  .ck a{color:#7FD8DE}
+  .ck button{flex:none;min-height:40px;padding:0 18px;border:0;border-radius:12px;background:#EAF1F3;color:#0E1A1F;font:700 .9rem Figtree,system-ui,sans-serif;cursor:pointer}
+  @media (max-width:520px){.ck{left:12px;right:12px;max-width:none}}
+  @media (max-width:760px){.ck.above-dock{bottom:calc(92px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
@@ -59,11 +75,13 @@
   <a href="about.html" class="">About</a>
   <a href="terms.html" class="on">Terms</a>
   <a href="privacy.html" class="">Privacy</a>
+  <a href="cookies.html" class="">Cookies</a>
+  <a href="security.html" class="">Security</a>
   <a href="./" class="home">Download</a>
 </div></nav>
 <div class="hero"><div class="in">
   <h1>Terms of Use</h1>
-  <p class="meta">Paisook by Aadhya Ventures · Effective 12 November 2026 · Version legal-2026-11b</p>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 14 November 2026 · Version legal-2026-11c</p>
   <p class="lede">The agreement between you and Aadhya Ventures for using Paisook.</p>
 </div></div>
 <main class="wrap">
@@ -73,28 +91,31 @@
     <li><a href="#3-what-the-service-is-and-is-not">3. What the Service is, and is not</a></li>
     <li><a href="#4-your-account-and-security">4. Your account and security</a></li>
     <li><a href="#5-permissions-and-automatic-tracking">5. Permissions and automatic tracking</a></li>
-    <li><a href="#6-pro-plan-prices-and-refunds">6. Pro plan, prices and refunds</a></li>
+    <li><a href="#6-payments-and-subscriptions">6. Payments and subscriptions</a></li>
     <li><a href="#7-points-programme">7. Points programme</a></li>
     <li><a href="#8-offers-and-third-party-services">8. Offers and third-party services</a></li>
-    <li><a href="#9-family-ledger-and-groups">9. Family ledger and groups</a></li>
-    <li><a href="#10-acceptable-use">10. Acceptable use</a></li>
-    <li><a href="#11-intellectual-property">11. Intellectual property</a></li>
-    <li><a href="#12-availability-and-changes">12. Availability and changes</a></li>
-    <li><a href="#13-disclaimer">13. Disclaimer</a></li>
-    <li><a href="#14-limitation-of-liability">14. Limitation of liability</a></li>
-    <li><a href="#15-indemnity">15. Indemnity</a></li>
-    <li><a href="#16-suspension-and-termination">16. Suspension and termination</a></li>
-    <li><a href="#17-governing-law-and-disputes">17. Governing law and disputes</a></li>
-    <li><a href="#18-general">18. General</a></li>
-    <li><a href="#19-contact-and-grievances">19. Contact and grievances</a></li>
+    <li><a href="#9-marketing-messages">9. Marketing messages</a></li>
+    <li><a href="#10-family-ledger-and-groups">10. Family ledger and groups</a></li>
+    <li><a href="#11-acceptable-use">11. Acceptable use</a></li>
+    <li><a href="#12-intellectual-property">12. Intellectual property</a></li>
+    <li><a href="#13-open-source-software">13. Open-source software</a></li>
+    <li><a href="#14-app-updates">14. App updates</a></li>
+    <li><a href="#15-availability-and-changes">15. Availability and changes</a></li>
+    <li><a href="#16-disclaimer">16. Disclaimer</a></li>
+    <li><a href="#17-limitation-of-liability">17. Limitation of liability</a></li>
+    <li><a href="#18-indemnity">18. Indemnity</a></li>
+    <li><a href="#19-suspension-and-termination">19. Suspension and termination</a></li>
+    <li><a href="#20-governing-law-and-disputes">20. Governing law and disputes</a></li>
+    <li><a href="#21-general">21. General</a></li>
+    <li><a href="#22-contact-and-grievances">22. Contact and grievances</a></li>
   </ol></div>
   <h2 id="1-about-these-terms">1. About these Terms</h2>
   <p>These Terms of Use ("Terms") are a legally binding agreement between you and Aadhya Ventures ("we", "us", "our"), a business based in Mumbai, Maharashtra, India, founded by Tanmay Mehta (Founder) and Shubh Mehta (Co-founder), which develops and operates the Paisook mobile application, its website and related services (together, the "Service").</p>
-  <p>By tapping "I agree", creating an account or using the Service, you accept these Terms and our Privacy Policy, which forms part of these Terms. If you do not agree, please do not use the Service. These Terms are an electronic record under the Information Technology Act, 2000 and do not need a physical or digital signature.</p>
+  <p>By tapping "I agree", creating an account or using the Service, you accept these Terms and our <a href="privacy.html">Privacy Policy</a>, which forms part of these Terms, together with our <a href="cookies.html">Cookie Policy</a>, <a href="security.html">Security &amp; Data Breach Policy</a> and <a href="delete.html">Data Deletion page</a>. If you do not agree, please do not use the Service. These Terms are an electronic record under the Information Technology Act, 2000 and do not need a physical or digital signature.</p>
   <h2 id="2-who-can-use-the-service">2. Who can use the Service</h2>
   <ul>
     <li>You must be at least 18 years old and competent to contract under the Indian Contract Act, 1872.</li>
-    <li>The Service is meant for personal, non-commercial use by individuals in India.</li>
+    <li>The Service is made for personal, non-commercial use by individuals in India. If you use it from another country, you are responsible for following your local laws.</li>
     <li>You must give true information and keep it up to date. One person may hold one account.</li>
   </ul>
   <p>If we learn that an account belongs to someone under 18, we will close it and erase its data.</p>
@@ -113,14 +134,18 @@
   </ul>
   <h2 id="5-permissions-and-automatic-tracking">5. Permissions and automatic tracking</h2>
   <p>SMS, notification, email, camera and Drive access are optional and asked for only with your consent. You can turn each off at any time in the app or in your phone's settings; related features will then stop working.</p>
-  <p>Automatic tracking depends on the format of messages your bank or app sends. Banks change formats, alerts can be delayed or missing, and recognition can be wrong. Please check your entries; your bank statement is the authoritative record.</p>
-  <h2 id="6-pro-plan-prices-and-refunds">6. Pro plan, prices and refunds</h2>
+  <p>Automatic tracking depends on the format of messages your bank or app sends. Banks change formats, alerts can be delayed or missing, and recognition can be wrong. Promotional and reward messages are ignored as far as we can recognise them. Please check your entries; your bank statement is the authoritative record.</p>
+  <h2 id="6-payments-and-subscriptions">6. Payments and subscriptions</h2>
+  <p>The core app, including automatic tracking, the family ledger and encrypted Drive backup, is free. Some extra features need a paid Pro plan.</p>
   <ul>
-    <li>Some features need a paid Pro plan. Prices are shown in the app before you pay and include applicable taxes unless stated otherwise.</li>
-    <li>You pay by UPI to the UPI ID shown in the app and submit the transaction reference. Pro is switched on after we confirm the payment, usually within 24 hours. Plans do not renew automatically.</li>
-    <li>Refunds: if a payment fails, is made twice, or Pro is not switched on within 7 days, write to the support email shown in Settings → Help &amp; feedback with the reference and we will refund it to the source within 7 working days of confirming. Otherwise, fees for a period already started are not refundable, except where the law requires.</li>
-    <li>Free trial: a new account can try Pro free, once, if started within 14 days of joining, for the period shown in the app when you start it. No payment details are needed and nothing renews automatically; when it ends, Pro features lock again and your data stays. We may change the trial length or end the offer at any time.</li>
-    <li>We may change prices or features for future periods with notice in the app. A change does not affect a period you have already paid for.</li>
+    <li>What you get: the features included in Pro and the price are shown in the app before you pay. Prices are in Indian rupees and include applicable taxes unless stated otherwise.</li>
+    <li>How you pay: by UPI to the UPI ID shown in the app, then you submit the transaction reference. Pro is switched on after we confirm the payment, usually within 24 hours. We never ask for card numbers, UPI PINs or bank passwords.</li>
+    <li>No automatic renewal: each plan runs for the period you paid for and then ends. Nothing is charged again unless you choose to pay again, so there is nothing to cancel. The app shows when your plan ends.</li>
+    <li>Free trial: a new account can try Pro free, once, if started within 14 days of joining, for the period shown in the app when you start it. No payment details are needed and nothing renews automatically; when it ends, Pro features lock again and your data stays. We may change the trial length or end the offer for new trials at any time.</li>
+    <li>Refunds: if a payment fails, is made twice, or Pro is not switched on within 7 days, write to the support email shown in Settings → Help &amp; feedback with the reference and we will refund it to the source within 7 working days of confirming. If we stop offering Pro before your paid period ends, we refund the unused part. Otherwise, fees for a period already started are not refundable, except where the law requires.</li>
+    <li>Receipts: ask at the support email shown in Settings → Help &amp; feedback and we will send a receipt for any payment.</li>
+    <li>Price changes: we may change prices or features for future periods with notice in the app. A change never affects a period you have already paid for.</li>
+    <li>If Pro ends, nothing is deleted: your data stays, and only Pro features lock.</li>
   </ul>
   <h2 id="7-points-programme">7. Points programme</h2>
   <ul>
@@ -131,49 +156,62 @@
   </ul>
   <h2 id="8-offers-and-third-party-services">8. Offers and third-party services</h2>
   <p>Offers and cashback information shown in the app come from third parties or from your own past rewards. We do not guarantee any offer; the third party's terms apply. Links to and hand-offs to other apps (UPI apps, banks, Google) are governed by their own terms and privacy policies, for which we are not responsible.</p>
-  <h2 id="9-family-ledger-and-groups">9. Family ledger and groups</h2>
+  <h2 id="9-marketing-messages">9. Marketing messages</h2>
+  <p>We do not send you promotional emails, SMS, calls or push notifications. Messages about your account, security, payments, app updates and changes to these Terms are service messages, not marketing. If we ever want to send promotional messages, we will ask for your separate, optional consent first, and you can withdraw it at any time. See section 5 of the <a href="privacy.html">Privacy Policy</a>.</p>
+  <h2 id="10-family-ledger-and-groups">10. Family ledger and groups</h2>
   <ul>
     <li>Joining a family ledger or a group is optional. You choose what to share; members can see what you share.</li>
     <li>Share only information you are entitled to share. Do not add other people's personal data without their consent.</li>
     <li>The owner of a family or group can remove members or delete it. Leaving removes your shared data as described in the app.</li>
   </ul>
-  <h2 id="10-acceptable-use">10. Acceptable use</h2>
+  <h2 id="11-acceptable-use">11. Acceptable use</h2>
   <p>You agree not to:</p>
   <ul>
     <li>use the Service for anything unlawful, fraudulent or harmful, or to violate anyone's rights;</li>
     <li>create fake, edited or automated messages or entries to earn points or mislead others;</li>
-    <li>copy, modify, reverse engineer, decompile or disassemble the app, except as the law allows;</li>
+    <li>copy, modify, reverse engineer, decompile or disassemble the app, except as the law or an open-source licence allows;</li>
     <li>interfere with or overload our systems, bypass security or access other users' data;</li>
     <li>resell or commercially exploit the Service without our written consent.</li>
   </ul>
-  <h2 id="11-intellectual-property">11. Intellectual property</h2>
-  <p>The app, its design, code, text, graphics, logos and names belong to Aadhya Ventures or its licensors. We grant you a limited, personal, non-exclusive, non-transferable, revocable licence to use the app on devices you own or control, under these Terms. Your data stays yours.</p>
-  <h2 id="12-availability-and-changes">12. Availability and changes</h2>
-  <p>We work to keep the Service available but do not promise it will be uninterrupted or error-free. We may maintain, update, change or discontinue features. Where a change significantly affects you, we will tell you in the app.</p>
-  <h2 id="13-disclaimer">13. Disclaimer</h2>
-  <p>To the extent permitted by law, the Service is provided "as is" and "as available", without warranties of any kind, express or implied, including accuracy of automatic tracking, fitness for a particular purpose and non-infringement. Nothing in these Terms limits rights you have under the Consumer Protection Act, 2019 that cannot be excluded.</p>
-  <h2 id="14-limitation-of-liability">14. Limitation of liability</h2>
-  <p>To the extent permitted by law, we are not liable for indirect, incidental, special or consequential loss, or for loss of profits, data or goodwill, arising from your use of the Service, from third-party apps or services, or from decisions you make based on the Service. Our total liability to you for any claim is limited to the amount you paid us for the Service in the 12 months before the claim, or ₹1,000, whichever is higher. Nothing here limits liability that cannot be limited by law, including for fraud or gross negligence.</p>
-  <h2 id="15-indemnity">15. Indemnity</h2>
-  <p>You agree to indemnify Aadhya Ventures against claims, losses and costs arising from your breach of these Terms, misuse of the Service, or violation of any law or the rights of others.</p>
-  <h2 id="16-suspension-and-termination">16. Suspension and termination</h2>
+  <h2 id="12-intellectual-property">12. Intellectual property</h2>
   <ul>
-    <li>You may stop using the Service and delete your account at any time from Settings.</li>
+    <li>Ours: the app, its design, code, text, graphics, the Paisook name and logo, and the website belong to Aadhya Ventures or its licensors and are protected by Indian and international copyright and trademark law. You may not use our name or logo in a way that suggests we endorse you, without our written consent.</li>
+    <li>Your licence: we grant you a limited, personal, non-exclusive, non-transferable, revocable licence to install and use the app on devices you own or control, under these Terms.</li>
+    <li>Yours: your data and your content stay yours. You give us only the permission needed to store and show what you choose to share (for example, with your family ledger) so the Service can work.</li>
+    <li>Feedback: if you send ideas or suggestions, we may use them to improve the Service without any obligation to you.</li>
+    <li>Open-source parts are licensed under their own terms (section 13), which these Terms do not restrict.</li>
+    <li>If you believe something in the Service infringes your rights, write to the support email shown in Settings → Help &amp; feedback with details and we will act on it promptly.</li>
+  </ul>
+  <h2 id="13-open-source-software">13. Open-source software</h2>
+  <p>The app is built with open-source software, including the Flutter framework, Firebase SDKs and the Figtree typeface. Each component is used under its own licence (such as BSD, MIT, Apache 2.0, MPL 2.0 or the SIL Open Font License), and nothing in these Terms limits your rights under those licences. The full list, with every licence text, is in the app under Settings → Open-source licences and on our website's <a href="licenses.html">Open-Source Licences page</a>.</p>
+  <h2 id="14-app-updates">14. App updates</h2>
+  <p>We release updates to fix problems, improve recognition and keep your data safe. The app checks our website for new versions and tells you when one is ready; installing it is your choice, but older versions may stop working correctly or securely. Updates are always signed with the same key, so Android only installs genuine Paisook updates over your current app. Download the app only from our website or an official app store.</p>
+  <h2 id="15-availability-and-changes">15. Availability and changes</h2>
+  <p>We work to keep the Service available but do not promise it will be uninterrupted or error-free. We may maintain, update, change or discontinue features. Where a change significantly affects you, we will tell you in the app.</p>
+  <h2 id="16-disclaimer">16. Disclaimer</h2>
+  <p>To the extent permitted by law, the Service is provided "as is" and "as available", without warranties of any kind, express or implied, including accuracy of automatic tracking, fitness for a particular purpose and non-infringement. Nothing in these Terms limits rights you have under the Consumer Protection Act, 2019 that cannot be excluded.</p>
+  <h2 id="17-limitation-of-liability">17. Limitation of liability</h2>
+  <p>To the extent permitted by law, we are not liable for indirect, incidental, special or consequential loss, or for loss of profits, data or goodwill, arising from your use of the Service, from third-party apps or services, or from decisions you make based on the Service. Our total liability to you for any claim is limited to the amount you paid us for the Service in the 12 months before the claim, or ₹1,000, whichever is higher. Nothing here limits liability that cannot be limited by law, including for fraud or gross negligence.</p>
+  <h2 id="18-indemnity">18. Indemnity</h2>
+  <p>You agree to indemnify Aadhya Ventures against claims, losses and costs arising from your breach of these Terms, misuse of the Service, or violation of any law or the rights of others.</p>
+  <h2 id="19-suspension-and-termination">19. Suspension and termination</h2>
+  <ul>
+    <li>You may stop using the Service and delete your account at any time from Settings. See our <a href="delete.html">Data Deletion page</a> for what is erased and when.</li>
     <li>We may suspend or close an account that breaches these Terms or the law, or to protect users or the Service, with notice where reasonable.</li>
     <li>Sections that by their nature should survive (such as intellectual property, disclaimer, liability, indemnity and governing law) survive termination.</li>
   </ul>
-  <h2 id="17-governing-law-and-disputes">17. Governing law and disputes</h2>
-  <p>These Terms are governed by the laws of India. Please first contact our Grievance Officer so we can try to resolve the matter. If it is not resolved within 30 days, it may be referred to arbitration by a sole arbitrator under the Arbitration and Conciliation Act, 1996, in English, seated in Mumbai, Maharashtra, whose courts will have exclusive jurisdiction. This does not stop you from approaching a consumer commission or the Data Protection Board of India where the law allows.</p>
-  <h2 id="18-general">18. General</h2>
+  <h2 id="20-governing-law-and-disputes">20. Governing law and disputes</h2>
+  <p>These Terms are governed by the laws of India. Please first contact our Grievance Officer so we can try to resolve the matter. If it is not resolved within 30 days, it may be referred to arbitration by a sole arbitrator under the Arbitration and Conciliation Act, 1996, in English, seated in Mumbai, Maharashtra, whose courts will have exclusive jurisdiction. This does not stop you from approaching a consumer commission, the Data Protection Board of India, or, if you live in the EU or UK, your data protection authority, where the law allows.</p>
+  <h2 id="21-general">21. General</h2>
   <ul>
     <li>If any part of these Terms is found unenforceable, the rest stays in effect.</li>
     <li>Not enforcing a right is not a waiver of it.</li>
     <li>You may not transfer your rights under these Terms; we may transfer ours as part of a reorganisation or sale, with notice to you.</li>
     <li>We are not responsible for delays caused by events beyond our reasonable control.</li>
-    <li>These Terms and the Privacy Policy are the entire agreement about the Service.</li>
+    <li>These Terms and the policies they refer to are the entire agreement about the Service.</li>
     <li>We may update these Terms. We will show the updated version in the app and, for material changes, ask you to agree again.</li>
   </ul>
-  <h2 id="19-contact-and-grievances">19. Contact and grievances</h2>
+  <h2 id="22-contact-and-grievances">22. Contact and grievances</h2>
   <p>Grievance Officer, Aadhya Ventures · Email: the support email shown in Settings → Help &amp; feedback · Based in Mumbai, Maharashtra</p>
   <p>We acknowledge complaints within 48 hours and aim to resolve them within 30 days, and in any case within the time required by law.</p>
 </main>
@@ -184,10 +222,20 @@
       <p>Your family's money book. Private, free, made in India.</p>
     </div>
     <nav aria-label="Footer">
-      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="./#faq">FAQ</a>
+      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="security.html">Security &amp; breach</a><a href="delete.html">Delete your data</a><a href="licenses.html">Open-source licences</a><a href="./#faq">FAQ</a>
     </nav>
   </div>
-  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made in Mumbai, India 🇮🇳</span></div>
+  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made by Aadhya Ventures · Made in India 🇮🇳</span></div>
 </footer>
+<div class="ck" id="ck" role="region" aria-label="Cookie notice" hidden>
+  <p>No cookies, no trackers. This site sets no cookies and loads nothing from third parties. <a href="cookies.html">Cookie Policy</a></p>
+  <button type="button" id="ckok">OK</button>
+</div>
+<script>
+(function(){var k='paisook-cookie-notice',el=document.getElementById('ck');
+try{if(localStorage.getItem(k))return}catch(e){}
+el.hidden=false;
+document.getElementById('ckok').addEventListener('click',function(){el.hidden=true;try{localStorage.setItem(k,'seen')}catch(e){}});})();
+</script>
 </body>
 </html>

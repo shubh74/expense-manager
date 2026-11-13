@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open-Source Licences · Paisook</title>
+<meta name="description" content="Paisook is built with open-source software. Thank you to everyone who makes it.">
+<link rel="icon" href="icon.png">
+<link rel="preload" href="fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Self-hosted (SIL OFL 1.1): no request to Google or any third party. */
+  @font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-400.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-500.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-600.woff2) format("woff2")}
+  @font-face{font-family:Figtree;font-style:normal;font-weight:700 800;font-display:swap;src:url(fonts/figtree-700.woff2) format("woff2")}
+</style>
+<style>
+  :root{--paper:#F2F5F6;--surface:#FFFFFF;--ink:#0E1A1F;--soft:#4A5A62;--muted:#5B6B73;--hair:#E1E8EB;--accent:#0B6E79;--accent-soft:#DDF0F1}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 Figtree,system-ui,sans-serif}
+  .bar{position:sticky;top:0;z-index:2;background:rgba(11,11,12,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+  .bar .in{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;align-items:center}
+  .bar .brand{padding:0 8px 0 0;display:flex;align-items:center;min-height:44px} .bar .brand img{display:block;height:28px;width:auto}
+  .bar a{min-height:40px;display:inline-flex;align-items:center}
+  @media (max-width:520px){.bar .home{display:none} .bar .in a{padding:7px 9px;font-size:.88rem} .bar .brand img{height:22px} .bar .in{gap:2px;overflow-x:auto;scrollbar-width:none}}
+  @media (max-width:360px){.bar .in a{padding:6px 7px;font-size:.84rem} .bar .brand img{height:19px} .bar .in{padding:8px 10px}}
+  .bar a{padding:8px 14px;border-radius:12px;text-decoration:none;color:#A9B6BC;font-weight:600;font-size:.92rem;transition:color .2s,background .2s}
+  .bar a:hover{color:#EAF1F3}
+  .bar a.on{background:rgba(255,255,255,.08);color:#EAF1F3}
+  .bar .home{background:#EAF1F3;color:#081316 !important}
+  .hero{background:#081316;color:#EAF1F3;padding:46px 0 40px;margin-bottom:8px}
+  .hero .in{max-width:760px;margin:0 auto;padding:0 16px}
+  .hero h1{color:#EAF1F3}
+  .hero .meta{color:#A9B6BC}
+  .hero .lede{color:#CFCAbe}
+  @media (prefers-reduced-motion:no-preference){main h2,main p,main ul{animation:rise .8s cubic-bezier(.16,1,.3,1) both}}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}}
+  .bar .home{margin-left:auto}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 16px 72px}
+  h1{font:700 clamp(2rem,6vw,2.9rem)/1.1 Figtree,system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 8px}
+  h2{font:600 1.08rem/1.35 Figtree,sans-serif;margin:34px 0 10px;scroll-margin-top:72px}
+  p,li{color:var(--soft)} p{margin:0 0 10px}
+  ul{margin:0 0 10px;padding-left:20px} li{margin:6px 0}
+  .meta{color:var(--muted);font-size:.9rem;margin:0 0 18px}
+  .lede{font-size:1.06rem;color:var(--ink)}
+  .toc{background:var(--surface);border:1px solid var(--hair);border-radius:18px;padding:16px 18px;margin:22px 0 8px}
+  .toc b{display:block;margin-bottom:6px}
+  .toc ol{margin:0;padding-left:0;list-style:none;columns:2 240px;column-gap:24px}
+  .toc li{margin:4px 0;break-inside:avoid}
+  .toc a{color:var(--soft);text-decoration:none} .toc a:hover{color:var(--accent)}
+  a{color:var(--accent);text-underline-offset:3px}
+  .ft{margin-top:64px;background:#081316;color:#A9B6BC;padding:44px 0 26px;font-size:.9rem}
+  .ft .in{max-width:760px;margin:0 auto;padding:0 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 32px}
+  .ft img{display:block;height:28px;width:auto}
+  .ft p{margin:12px 0 0;color:#A9B6BC}
+  .ft nav{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
+  .ft a{color:#CFCABE;text-decoration:none} .ft a:hover{color:#EAF1F3}
+  .ft .bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+  /* Cookie notice: informational (we set no cookies), remembered locally. */
+  .ck{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;max-width:440px;display:flex;gap:12px;align-items:center;
+      background:#0E1A1F;color:#EAF1F3;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px 12px 12px 16px;box-shadow:0 12px 40px rgba(0,0,0,.25);font:500 .88rem/1.45 Figtree,system-ui,sans-serif}
+  .ck[hidden]{display:none}
+  .ck p{margin:0;color:#CFD9DD;flex:1}
+  .ck a{color:#7FD8DE}
+  .ck button{flex:none;min-height:40px;padding:0 18px;border:0;border-radius:12px;background:#EAF1F3;color:#0E1A1F;font:700 .9rem Figtree,system-ui,sans-serif;cursor:pointer}
+  @media (max-width:520px){.ck{left:12px;right:12px;max-width:none}}
+  @media (max-width:760px){.ck.above-dock{bottom:calc(92px + env(safe-area-inset-bottom))}}
+</style>
+</head>
+<body>
+<nav class="bar"><div class="in">
+  <a href="./" class="brand" aria-label="Paisook home"><img src="logo-h-white.png" alt="Paisook" height="28"></a>
+  <a href="about.html" class="">About</a>
+  <a href="terms.html" class="">Terms</a>
+  <a href="privacy.html" class="">Privacy</a>
+  <a href="cookies.html" class="">Cookies</a>
+  <a href="security.html" class="">Security</a>
+  <a href="./" class="home">Download</a>
+</div></nav>
+<div class="hero"><div class="in">
+  <h1>Open-Source Licences</h1>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 14 November 2026 · Version legal-2026-11c</p>
+  <p class="lede">Paisook is built with open-source software. Thank you to everyone who makes it.</p>
+</div></div>
+<main class="wrap">
+  <div class="toc"><b>Contents</b><ol>
+    <li><a href="#1-about-this-list">1. About this list</a></li>
+    <li><a href="#2-main-components">2. Main components</a></li>
+    <li><a href="#3-all-packages-142">3. All packages (142)</a></li>
+  </ol></div>
+  <h2 id="1-about-this-list">1. About this list</h2>
+  <p>The app includes the open-source components below. Each is used under its own licence, and nothing in our Terms limits your rights under those licences. In the app, Settings → Open-source licences shows the full text of every licence.</p>
+  <h2 id="2-main-components">2. Main components</h2>
+  <ul>
+    <li>Flutter and Dart, by Google: BSD-3-Clause.</li>
+    <li>Firebase SDKs (Authentication, Cloud Firestore): BSD-3-Clause / Apache-2.0.</li>
+    <li>Figtree typeface, by Erik Kennedy: SIL Open Font License 1.1.</li>
+    <li>Material Icons, by Google: Apache-2.0.</li>
+  </ul>
+  <h2 id="3-all-packages-142">3. All packages (142)</h2>
+  <ul>
+    <li>_flutterfire_internals 1.3.79: BSD-3-Clause</li>
+    <li>archive 4.6.0: MIT</li>
+    <li>args 2.7.0: BSD-3-Clause</li>
+    <li>async 2.13.1: BSD-3-Clause</li>
+    <li>barcode 2.2.9: Apache-2.0</li>
+    <li>bidi 2.0.13: MIT</li>
+    <li>characters 1.4.1: BSD-3-Clause</li>
+    <li>clock 1.1.2: Apache-2.0</li>
+    <li>cloud_firestore 7.1.0: BSD-3-Clause</li>
+    <li>cloud_firestore_platform_interface 8.1.0: BSD-3-Clause</li>
+    <li>cloud_firestore_web 5.8.0: BSD-3-Clause</li>
+    <li>code_assets 1.2.1: BSD-3-Clause</li>
+    <li>collection 1.19.1: BSD-3-Clause</li>
+    <li>cross_file 0.3.5+5: BSD-3-Clause</li>
+    <li>crypto 3.0.8: BSD-3-Clause</li>
+    <li>cryptography 2.9.0: Apache-2.0</li>
+    <li>cupertino_icons 1.0.9: MIT</li>
+    <li>dbus 0.8.0: MPL-2.0</li>
+    <li>equatable 3.0.0: MIT</li>
+    <li>ffi 2.2.0: BSD-3-Clause</li>
+    <li>ffi_leak_tracker 0.1.2: BSD-3-Clause</li>
+    <li>file 7.0.1: BSD-3-Clause</li>
+    <li>file_selector_linux 0.9.4+1: BSD-3-Clause</li>
+    <li>file_selector_macos 0.9.5+1: BSD-3-Clause</li>
+    <li>file_selector_platform_interface 2.7.0: BSD-3-Clause</li>
+    <li>file_selector_windows 0.9.3+6: BSD-3-Clause</li>
+    <li>firebase_auth 7.0.1: BSD-3-Clause</li>
+    <li>firebase_auth_platform_interface 9.1.2: BSD-3-Clause</li>
+    <li>firebase_auth_web 6.3.2: BSD-3-Clause</li>
+    <li>firebase_core 5.1.0: BSD-3-Clause</li>
+    <li>firebase_core_platform_interface 8.1.1: BSD-3-Clause</li>
+    <li>firebase_core_web 4.1.0: BSD-3-Clause</li>
+    <li>fixnum 1.1.1: BSD-3-Clause</li>
+    <li>fl_chart 1.3.0: MIT</li>
+    <li>flutter 0.0.0: BSD-3-Clause</li>
+    <li>flutter_animate 4.5.2: BSD-3-Clause</li>
+    <li>flutter_local_notifications 22.3.1: BSD-3-Clause</li>
+    <li>flutter_local_notifications_linux 8.0.2: BSD-3-Clause</li>
+    <li>flutter_local_notifications_platform_interface 12.2.0: BSD-3-Clause</li>
+    <li>flutter_local_notifications_web 1.0.0: BSD-3-Clause</li>
+    <li>flutter_local_notifications_windows 3.1.1: BSD-3-Clause</li>
+    <li>flutter_localizations 0.0.0: BSD-3-Clause</li>
+    <li>flutter_plugin_android_lifecycle 2.0.35: BSD-3-Clause</li>
+    <li>flutter_secure_storage 11.2.0: BSD-3-Clause</li>
+    <li>flutter_secure_storage_darwin 0.4.3: BSD-3-Clause</li>
+    <li>flutter_secure_storage_linux 3.0.3: BSD-3-Clause</li>
+    <li>flutter_secure_storage_platform_interface 2.1.1: BSD-3-Clause</li>
+    <li>flutter_secure_storage_web 2.1.1: BSD-3-Clause</li>
+    <li>flutter_secure_storage_windows 4.2.2: BSD-3-Clause</li>
+    <li>flutter_shaders 0.1.5: BSD-3-Clause</li>
+    <li>flutter_sms_inbox 1.0.5: MIT</li>
+    <li>flutter_web_plugins 0.0.0: BSD-3-Clause</li>
+    <li>google_identity_services_web 0.3.3+1: BSD-3-Clause</li>
+    <li>google_sign_in 6.3.0: BSD-3-Clause</li>
+    <li>google_sign_in_android 6.2.1: BSD-3-Clause</li>
+    <li>google_sign_in_ios 5.9.0: BSD-3-Clause</li>
+    <li>google_sign_in_platform_interface 2.5.0: BSD-3-Clause</li>
+    <li>google_sign_in_web 0.12.4+4: BSD-3-Clause</li>
+    <li>home_widget 0.10.0: BSD-3-Clause</li>
+    <li>hooks 2.0.2: BSD-3-Clause</li>
+    <li>http 1.6.0: BSD-3-Clause</li>
+    <li>http_parser 4.1.2: BSD-3-Clause</li>
+    <li>image 4.12.0: MIT</li>
+    <li>image_picker 1.2.4: Apache-2.0</li>
+    <li>image_picker_android 0.8.13+25: Apache-2.0</li>
+    <li>image_picker_for_web 3.1.1: BSD-3-Clause</li>
+    <li>image_picker_ios 0.8.13+10: Apache-2.0</li>
+    <li>image_picker_linux 0.2.2: BSD-3-Clause</li>
+    <li>image_picker_macos 0.2.2+1: BSD-3-Clause</li>
+    <li>image_picker_platform_interface 2.11.2: BSD-3-Clause</li>
+    <li>image_picker_windows 0.2.2: BSD-3-Clause</li>
+    <li>intl 0.20.2: BSD-3-Clause</li>
+    <li>jni 1.1.2: BSD-3-Clause</li>
+    <li>jni_flutter 1.0.4+1: BSD-3-Clause</li>
+    <li>jni_util 1.0.0: BSD-3-Clause</li>
+    <li>local_auth 3.0.2: BSD-3-Clause</li>
+    <li>local_auth_android 2.3.0: BSD-3-Clause</li>
+    <li>local_auth_darwin 2.0.5: BSD-3-Clause</li>
+    <li>local_auth_platform_interface 1.1.0: BSD-3-Clause</li>
+    <li>local_auth_windows 2.0.2: BSD-3-Clause</li>
+    <li>logging 1.3.0: BSD-3-Clause</li>
+    <li>material_color_utilities 0.13.0: Apache-2.0</li>
+    <li>meta 1.18.0: BSD-3-Clause</li>
+    <li>mime 2.1.0: BSD-3-Clause</li>
+    <li>mobile_scanner 7.5.0: BSD-3-Clause</li>
+    <li>nested 1.0.0: MIT</li>
+    <li>objective_c 9.5.0: BSD-3-Clause</li>
+    <li>package_config 3.0.0: BSD-3-Clause</li>
+    <li>path 1.9.1: BSD-3-Clause</li>
+    <li>path_parsing 1.1.0: MIT</li>
+    <li>path_provider 2.1.6: BSD-3-Clause</li>
+    <li>path_provider_android 2.3.1: BSD-3-Clause</li>
+    <li>path_provider_foundation 2.6.0: BSD-3-Clause</li>
+    <li>path_provider_linux 2.2.2: BSD-3-Clause</li>
+    <li>path_provider_platform_interface 2.1.3: BSD-3-Clause</li>
+    <li>path_provider_windows 2.3.0: BSD-3-Clause</li>
+    <li>pdf 3.13.1: Apache-2.0</li>
+    <li>permission_handler 13.0.2: MIT</li>
+    <li>permission_handler_android 14.1.1: MIT</li>
+    <li>permission_handler_apple 9.6.5: MIT</li>
+    <li>permission_handler_html 0.1.4+1: MIT</li>
+    <li>permission_handler_platform_interface 4.4.1: MIT</li>
+    <li>permission_handler_windows 0.2.4: MIT</li>
+    <li>petitparser 7.0.2: MIT</li>
+    <li>platform 3.2.0: BSD-3-Clause</li>
+    <li>plugin_platform_interface 2.1.8: BSD-3-Clause</li>
+    <li>posix 6.5.4: MIT</li>
+    <li>provider 6.1.5+1: MIT</li>
+    <li>pub_semver 2.2.1: BSD-3-Clause</li>
+    <li>qr 3.0.3: BSD-3-Clause</li>
+    <li>qr_flutter 4.1.0: BSD-3-Clause</li>
+    <li>record_use 0.6.0: BSD-3-Clause</li>
+    <li>share_plus 13.3.1: BSD-3-Clause</li>
+    <li>share_plus_platform_interface 7.2.0: BSD-3-Clause</li>
+    <li>shared_preferences 2.5.6: BSD-3-Clause</li>
+    <li>shared_preferences_android 2.5.4: BSD-3-Clause</li>
+    <li>shared_preferences_foundation 2.5.7: BSD-3-Clause</li>
+    <li>shared_preferences_linux 2.4.1: BSD-3-Clause</li>
+    <li>shared_preferences_platform_interface 2.4.2: BSD-3-Clause</li>
+    <li>shared_preferences_web 2.4.3: BSD-3-Clause</li>
+    <li>shared_preferences_windows 2.4.1: BSD-3-Clause</li>
+    <li>sky_engine 0.0.0: BSD-3-Clause</li>
+    <li>source_span 1.10.2: BSD-3-Clause</li>
+    <li>string_scanner 1.4.1: BSD-3-Clause</li>
+    <li>term_glyph 1.2.2: BSD-3-Clause</li>
+    <li>timezone 0.11.2: BSD-2-Clause</li>
+    <li>typed_data 1.4.0: BSD-3-Clause</li>
+    <li>url_launcher 6.3.3: BSD-3-Clause</li>
+    <li>url_launcher_android 6.3.33: BSD-3-Clause</li>
+    <li>url_launcher_ios 6.4.2: BSD-3-Clause</li>
+    <li>url_launcher_linux 3.2.3: BSD-3-Clause</li>
+    <li>url_launcher_macos 3.2.6: BSD-3-Clause</li>
+    <li>url_launcher_platform_interface 2.3.2: BSD-3-Clause</li>
+    <li>url_launcher_web 2.4.3: BSD-3-Clause</li>
+    <li>url_launcher_windows 3.1.6: BSD-3-Clause</li>
+    <li>uuid 4.6.0: MIT</li>
+    <li>vector_math 2.2.0: BSD-3-Clause</li>
+    <li>web 1.1.1: BSD-3-Clause</li>
+    <li>win32 6.4.0: BSD-3-Clause</li>
+    <li>xdg_directories 1.1.0: BSD-3-Clause</li>
+    <li>xml 7.0.1: MIT</li>
+    <li>yaml 3.1.4: MIT</li>
+  </ul>
+</main>
+<footer class="ft">
+  <div class="in">
+    <div>
+      <img src="logo-h-white.png" alt="Paisook" height="28">
+      <p>Your family's money book. Private, free, made in India.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="./">Home</a><a href="about.html">About</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="security.html">Security &amp; breach</a><a href="delete.html">Delete your data</a><a href="licenses.html">Open-source licences</a><a href="./#faq">FAQ</a>
+    </nav>
+  </div>
+  <div class="in bottom"><span>© 2026 Aadhya Ventures · Founded by Tanmay Mehta &amp; Shubh Mehta</span><span>Made by Aadhya Ventures · Made in India 🇮🇳</span></div>
+</footer>
+<div class="ck" id="ck" role="region" aria-label="Cookie notice" hidden>
+  <p>No cookies, no trackers. This site sets no cookies and loads nothing from third parties. <a href="cookies.html">Cookie Policy</a></p>
+  <button type="button" id="ckok">OK</button>
+</div>
+<script>
+(function(){var k='paisook-cookie-notice',el=document.getElementById('ck');
+try{if(localStorage.getItem(k))return}catch(e){}
+el.hidden=false;
+document.getElementById('ckok').addEventListener('click',function(){el.hidden=true;try{localStorage.setItem(k,'seen')}catch(e){}});})();
+</script>
+</body>
+</html>
