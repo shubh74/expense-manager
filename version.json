@@ -1,14 +1,14 @@
 {
-  "version": "1.18.3",
-  "build": 3005,
-  "url": "https://shubh74.github.io/expense-manager/",
+  "version": "1.19.0",
+  "build": 3008,
+  "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "Merged accounts now always add up their balances, even if you merged in an older version",
-    "Promo and cashback messages (like Ola Money credits) are no longer counted as money received",
-    "The Ledger now shows the whole month and scrolls all the way to the last entry",
-    "The Undo bar now disappears on its own after a few seconds",
-    "Update alerts arrive faster and work even when github.io is blocked",
-    "Credit cards no longer count as balance, and card bill payments are not counted as spending",
-    "New privacy, cookie, security, data deletion and open-source licence pages"
+    "A brand new Home: your total balance, accounts as swipeable cards, and the latest payments at a glance",
+    "Hide your balances with one tap when someone is looking",
+    "New Budgets & Insights: see where your money went on one colourful ring",
+    "A big + button to add anything, and quick Scan & pay, Cash, Split and Remind",
+    "Works calmly offline, warns before you lose a half-typed entry, and clearer search results",
+    "Stronger security: fake copies of the app are blocked, and the PIN lock counts down after wrong tries",
+    "Faster and smoother, with less clutter on every screen"
   ]
 }
