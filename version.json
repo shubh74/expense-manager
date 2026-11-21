@@ -1,12 +1,14 @@
 {
-  "version": "1.22.5",
-  "build": 3017,
+  "version": "1.22.6",
+  "build": 3018,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "Payments to a company whose name contains a bank word (e.g. HDFC Life, SBI Mutual Fund) no longer create a wrong bank account",
-    "Your account's bank is now read from the bank that sent the SMS, not from the payee or UPI handle",
-    "Balances stay up to date: the last balance an SMS gave is carried forward through your newer spends and shown as an estimate",
-    "An out-of-date balance shows the date it was read; tap Enter balance to set it exactly",
-    "Reads amount, balance and direction from even more bank SMS formats"
+    "Each account now shows under the right bank: the bank is read from the SMS sender and its sign-off, not from a payee or the other person's bank",
+    "No more phantom banks: receiving money from someone at another bank won't create an account you don't have",
+    "Two different banks that share the last 4 digits (e.g. a Kotak and an HDFC account) stay separate",
+    "Co-operative and small banks like Vasai Vikas (VVSB) and more Kotak senders are now recognised",
+    "GPay, PhonePe and BHIM payments now sit under your real bank account instead of a separate \"Google Pay UPI\" style account",
+    "Balance replies count: \"your account balance is ₹X\" from the bank updates that account, and balances carry forward through newer spends",
+    "Choosing banks is fixed: the list scrolls and the Save button is always visible"
   ]
 }
