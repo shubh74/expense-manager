@@ -83,7 +83,7 @@
 </div></nav>
 <div class="hero"><div class="in">
   <h1>Privacy Policy</h1>
-  <p class="meta">Paisook by Aadhya Ventures · Effective 14 November 2026 · Version legal-2026-11c</p>
+  <p class="meta">Paisook by Aadhya Ventures · Effective 21 November 2026 · Version legal-2026-11d</p>
   <p class="lede">How Paisook collects, uses, shares and protects your personal data, and your rights under India's DPDP Act, 2023 and the EU / UK GDPR.</p>
 </div></div>
 <main class="wrap">
@@ -125,7 +125,7 @@
   <ul>
     <li>Account details: name, email, sign-in method (email or Google), app version, device platform, dates joined and last active. Purpose: create and secure your account, keep the service working, count active users. Stored on our servers (Google Firebase).</li>
     <li>Consent record: when and to which version you agreed. Purpose: prove and manage your consent. Our servers.</li>
-    <li>Plan and payments: plan status, validity and the UPI reference, amount and date you submit when buying Pro. Purpose: switch on Pro, handle refunds, comply with tax and accounting law. Our servers.</li>
+    <li>Plan and payments: plan status and validity, and for each purchase the Razorpay order and payment IDs, amount, plan and date. Purpose: switch on Pro, handle refunds, comply with tax and accounting law. Our servers. We never receive your card, UPI or bank details.</li>
     <li>Points total: a single number. Purpose: run the points programme. Our servers.</li>
     <li>Backup key (optional): if you choose backup without a passphrase, a random encryption key for your Drive backup. Purpose: let you restore on a new phone by signing in. Our servers, readable only by your signed-in account; it is useless without your Drive file, which we never receive. Deleted with your account.</li>
     <li>Bank / UPI / card SMS (optional, SMS permission): read on your device to find payments. Only the recognised transaction is saved, on your device. OTPs, promotional and personal messages are ignored and never saved.</li>
@@ -133,7 +133,7 @@
     <li>Bank alert emails (optional, Gmail): see section 8.</li>
     <li>Your ledger: transactions, accounts, budgets, goals, loans, bills, reminders, notes, receipts and tax tags. Purpose: the app's features. Your device only (and your encrypted backup, if you turn it on).</li>
     <li>Camera and photos (optional): to scan UPI QR codes and attach receipts. Processed and kept on your device.</li>
-    <li>Family ledger and groups (optional): the summaries or entries you choose to share, your name, role, consent and optional UPI ID. Purpose: show them to the members you share with. Our servers.</li>
+    <li>Family ledger and groups (optional): the summaries or entries you choose to share, your name, role, consent, optional UPI ID, and a household budget if the owner sets one. Purpose: show them to the members you share with. Our servers.</li>
     <li>Support messages: what you send us. Purpose: answer you. Kept in our email.</li>
     <li>Website visits: our hosting providers automatically log technical data such as IP address, browser and time of request, to deliver and secure the site (see section 9).</li>
   </ul>
@@ -169,10 +169,12 @@
   <h2 id="9-third-parties-we-disclose-data-to">9. Third parties we disclose data to</h2>
   <p>We do not sell, rent or trade personal data. The only parties that receive any of it are:</p>
   <ul>
-    <li>Google LLC (Firebase Authentication and Cloud Firestore), our Data Processor: account, consent, plan, points, backup key and family-sharing records, to run the Service. Servers may be outside India.</li>
+    <li>Google LLC (Firebase Authentication, Cloud Firestore and Cloud Functions), our Data Processor: account, consent, plan, payment records, points, backup key and family-sharing records, to run the Service. Servers may be outside India.</li>
+    <li>Razorpay Software Private Limited, Bengaluru (RBI-authorised payment aggregator), when you buy Pro: processes your payment and the details you enter in Checkout under its own privacy policy, and tells us whether the payment succeeded. It receives your email to send a receipt.</li>
     <li>GitHub, Inc. (GitHub Pages) and Vercel Inc., which host our website and app downloads: technical request logs (IP address, browser, time) when you visit or download. They process this to deliver and secure the site.</li>
     <li>Google, as your own provider, when you choose to use it: Google Sign-In, your Gmail (read on your phone) and your Google Drive (your encrypted backup). This data goes between your phone and your Google account, not to us.</li>
     <li>The UPI app you pick when you pay: the payee details and amount are handed to it.</li>
+    <li>An app you choose from Ask Paisook: Ask Paisook answers on your phone; only if you tap "Ask my own AI" and confirm is that one question and answer shared, with the app you pick (for example an AI chat app), under that app's terms.</li>
     <li>People you choose: family or group members see what you share with them.</li>
     <li>Authorities: when required by law, court order or a lawful request from a government agency, or to protect the rights and safety of users and the public. Where the law allows, we will tell you.</li>
     <li>A buyer or successor, if Aadhya Ventures is reorganised or sold, under this Policy, with notice to you.</li>
@@ -183,6 +185,7 @@
   <ul>
     <li>Google: Firebase Data Processing and Security Terms and the Google Cloud Data Processing Addendum, which include the EU Standard Contractual Clauses.</li>
     <li>Vercel: Vercel Data Processing Addendum, which includes the EU Standard Contractual Clauses.</li>
+    <li>Razorpay: Razorpay's terms and privacy policy, and its obligations as an RBI-regulated payment aggregator (including PCI DSS card security).</li>
     <li>GitHub: GitHub Privacy Statement and, where applicable, the GitHub Data Protection Agreement.</li>
   </ul>
   <p>We remain responsible for our processors. We review them when we add or change one and will update this list before any new processor receives your data.</p>
@@ -202,8 +205,8 @@
   <h2 id="13-deleting-your-data">13. Deleting your data</h2>
   <p>You can delete your data at any time, without giving a reason:</p>
   <ul>
-    <li>Everything: Settings → Withdraw consent &amp; delete account. This erases your account, consent, points and backup key from our servers, removes you from any family ledger (deleting what you shared), deletes your sign-in, and erases the ledger on your phone, immediately.</li>
-    <li>Only this phone: Settings → Erase all data on this phone.</li>
+    <li>Everything: Settings → Delete data or account → Withdraw consent &amp; delete account. This erases your account, consent, points and backup key from our servers, removes you from any family ledger (deleting what you shared), deletes your sign-in, and erases the ledger on your phone, immediately.</li>
+    <li>Only this phone: Settings → Delete data or account → Erase all data on this phone.</li>
     <li>Your Drive backup: Settings → Backup → Delete backup from my Drive, or in Google Drive under Settings → Manage apps → Paisook → Delete hidden app data.</li>
     <li>Without the app: write to the support email shown in Settings → Help &amp; feedback from your registered email with the subject "Delete my account". We confirm within 48 hours and complete it within 30 days.</li>
   </ul>

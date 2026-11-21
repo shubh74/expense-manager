@@ -1,14 +1,16 @@
 {
-  "version": "1.19.0",
-  "build": 3008,
+  "version": "1.22.2",
+  "build": 3014,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "A brand new Home: your total balance, accounts as swipeable cards, and the latest payments at a glance",
-    "Hide your balances with one tap when someone is looking",
-    "New Budgets & Insights: see where your money went on one colourful ring",
-    "A big + button to add anything, and quick Scan & pay, Cash, Split and Remind",
-    "Works calmly offline, warns before you lose a half-typed entry, and clearer search results",
-    "Stronger security: fake copies of the app are blocked, and the PIN lock counts down after wrong tries",
-    "Faster and smoother, with less clutter on every screen"
+    "Faster: tabs open instantly and scrolling is smoother",
+    "Credit cards show their due date and amount in Wallets (or add it in one tap)",
+    "Marks for 100+ banks, including small finance, co-operative, rural and foreign banks",
+    "Payees no longer show banking codes like \"DR\"",
+    "Stronger protection against modified and cloned copies of the app",
+    "Cleaner, calmer Settings: fewer sections, short explanations, one place to delete data",
+    "Brand marks for Amazon, Flipkart, Swiggy, Zomato, Netflix and 35+ more",
+    "New loading screen that flows straight from the app icon",
+    "Simpler Legal & privacy pages"
   ]
 }
