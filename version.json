@@ -1,12 +1,12 @@
 {
-  "version": "1.22.4",
-  "build": 3016,
+  "version": "1.22.5",
+  "build": 3017,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "Bank balances read correctly from far more SMS formats (SBI, HDFC, ICICI, PNB, Canara, IndusInd, Federal and many more)",
-    "Your available balance is never mixed up with the minimum, ledger or monthly-average balance",
-    "An out-of-date balance now shows the date it was last read, so you know when to refresh it",
-    "More reliable at telling money coming in from money going out",
-    "Credit cards stay counted separately from your spendable balance"
+    "Payments to a company whose name contains a bank word (e.g. HDFC Life, SBI Mutual Fund) no longer create a wrong bank account",
+    "Your account's bank is now read from the bank that sent the SMS, not from the payee or UPI handle",
+    "Balances stay up to date: the last balance an SMS gave is carried forward through your newer spends and shown as an estimate",
+    "An out-of-date balance shows the date it was read; tap Enter balance to set it exactly",
+    "Reads amount, balance and direction from even more bank SMS formats"
   ]
 }
