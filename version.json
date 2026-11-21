@@ -1,14 +1,12 @@
 {
-  "version": "1.22.6",
-  "build": 3018,
+  "version": "1.22.7",
+  "build": 3019,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "Each account now shows under the right bank: the bank is read from the SMS sender and its sign-off, not from a payee or the other person's bank",
-    "No more phantom banks: receiving money from someone at another bank won't create an account you don't have",
-    "Two different banks that share the last 4 digits (e.g. a Kotak and an HDFC account) stay separate",
-    "Co-operative and small banks like Vasai Vikas (VVSB) and more Kotak senders are now recognised",
-    "GPay, PhonePe and BHIM payments now sit under your real bank account instead of a separate \"Google Pay UPI\" style account",
-    "Balance replies count: \"your account balance is ₹X\" from the bank updates that account, and balances carry forward through newer spends",
-    "Choosing banks is fixed: the list scrolls and the Save button is always visible"
+    "Unmerge accounts: if two banks were combined by mistake, open the account and tap \"Split back out\" to separate them again",
+    "Kotak accounts (like Kotak811) are read correctly and kept separate from HDFC and other banks",
+    "Each account shows under the right bank, read from the SMS sender and sign-off, not a payee or the other person's bank",
+    "GPay, PhonePe and BHIM payments sit under your real bank instead of a separate app account",
+    "Balance replies from the bank update that account, and balances carry forward through newer spends"
   ]
 }
