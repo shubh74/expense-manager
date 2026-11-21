@@ -1,14 +1,12 @@
 {
-  "version": "1.22.3",
-  "build": 3015,
+  "version": "1.22.4",
+  "build": 3016,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "Real brand logos for Amazon, Netflix, Swiggy, Paytm, HDFC and 20+ more; a clean mark for the rest",
-    "Choose your banks from a searchable list of 100+ banks, each with its mark",
-    "Faster: tabs open instantly and scrolling is smoother",
-    "Credit cards show their due date and amount in Wallets (or add it in one tap)",
-    "Marks for 100+ banks, including small finance, co-operative, rural and foreign banks",
-    "Payees no longer show banking codes like \"DR\"",
-    "Stronger protection against modified and cloned copies of the app"
+    "Bank balances read correctly from far more SMS formats (SBI, HDFC, ICICI, PNB, Canara, IndusInd, Federal and many more)",
+    "Your available balance is never mixed up with the minimum, ledger or monthly-average balance",
+    "An out-of-date balance now shows the date it was last read, so you know when to refresh it",
+    "More reliable at telling money coming in from money going out",
+    "Credit cards stay counted separately from your spendable balance"
   ]
 }
