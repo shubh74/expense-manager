@@ -1,16 +1,14 @@
 {
-  "version": "1.22.2",
-  "build": 3014,
+  "version": "1.22.3",
+  "build": 3015,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
+    "Real brand logos for Amazon, Netflix, Swiggy, Paytm, HDFC and 20+ more; a clean mark for the rest",
+    "Choose your banks from a searchable list of 100+ banks, each with its mark",
     "Faster: tabs open instantly and scrolling is smoother",
     "Credit cards show their due date and amount in Wallets (or add it in one tap)",
     "Marks for 100+ banks, including small finance, co-operative, rural and foreign banks",
     "Payees no longer show banking codes like \"DR\"",
-    "Stronger protection against modified and cloned copies of the app",
-    "Cleaner, calmer Settings: fewer sections, short explanations, one place to delete data",
-    "Brand marks for Amazon, Flipkart, Swiggy, Zomato, Netflix and 35+ more",
-    "New loading screen that flows straight from the app icon",
-    "Simpler Legal & privacy pages"
+    "Stronger protection against modified and cloned copies of the app"
   ]
 }
