@@ -1,12 +1,11 @@
 {
-  "version": "1.22.7",
-  "build": 3019,
+  "version": "1.22.8",
+  "build": 3020,
   "url": "https://paisook.aadhyaventures.tech/",
   "notes": [
-    "Unmerge accounts: if two banks were combined by mistake, open the account and tap \"Split back out\" to separate them again",
-    "Kotak accounts (like Kotak811) are read correctly and kept separate from HDFC and other banks",
-    "Each account shows under the right bank, read from the SMS sender and sign-off, not a payee or the other person's bank",
-    "GPay, PhonePe and BHIM payments sit under your real bank instead of a separate app account",
-    "Balance replies from the bank update that account, and balances carry forward through newer spends"
+    "Kotak and other banks no longer get stuck inside HDFC: an alert an older version filed under the wrong bank is moved back to its own account automatically",
+    "Banks stay separate unless you merge them yourself, and a merge you made is always kept (and can still be split back out)",
+    "Received money shows who it is from, and the bank's sign-off no longer leaks into the name",
+    "Each account reads from the SMS sender and sign-off, never a payee or the other person's bank"
   ]
 }
