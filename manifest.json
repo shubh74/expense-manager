@@ -1,0 +1,13 @@
+{
+  "name": "Paisook",
+  "short_name": "Paisook",
+  "description": "Automatic expense tracker for UPI, cards and family. Free, made in India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081316",
+  "theme_color": "#081316",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
